@@ -1,0 +1,469 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Russo+One&display=swap"); */
+
+/* FONT FACE LOADER */
+@font-face {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Russo One Regular'), local('Russo One-Regular'), url('fonts/RussoOne-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Open Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url("fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+:root {
+  --primary-color: #ff0000dd;
+  --secondary-color: #051d24d9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+.btn {
+  font-family: "Russo One", sans-serif;
+  color: var(--secondary-color);
+}
+
+#showcase h1,
+#contact h1,
+#showcase h3,
+#contact h3 {
+  color: #fff;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-top: 25px;
+}
+
+/*-----------------
+    NAVIGATION 
+-----------------*/
+
+/*-------------------
+    SHOWCASE SECTION
+-------------------*/
+#showcase {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.video-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: grey url("images/muscle-building03.jpg") no-repeat center
+    center/cover;
+}
+
+.video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #051d2487;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.content {
+  z-index: 10;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 25px;
+  background: #ff0000dd;
+  border: 1px solid red;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05) translateY(5px);
+  transition: ease 0.4s;
+}
+
+.btn-primary {
+  margin-top: 0;
+}
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+/*-------------------------------------
+   IMAGE OVERFLOW & HOVER ANIMATIONS
+--------------------------------------*/
+.grid-img {
+  overflow: hidden;
+  box-shadow: 5px 5px 10px #808080;
+}
+/* .fitness-grid .row .fitness-grid-item .grid-img img {
+  transition: filter 0.4s ease, transform 0.4s ease;
+  overflow: hidden;
+  display: block;
+}
+
+.fitness-grid .row .fitness-grid-item:hover .grid-img img {
+  filter: brightness(65%);
+  transform: scale(1.1);
+} */
+
+img {
+  transition: filter 0.4s ease, transform 0.4s ease;
+  display: block;
+}
+
+img:hover {
+  filter: brightness(65%);
+  transform: scale(1.1);
+}
+/*-- LIGHTBOX uses INPUT TYPE="IMAGE" instead of IMG --*/
+input {
+  transition: filter 0.4s ease, transform 0.4s ease;
+  display: block;
+}
+
+input:hover {
+  filter: brightness(65%);
+  transform: scale(1.1);
+}
+
+/*-------------------
+    ABOUT SECTION
+-------------------*/
+
+section {
+  padding: 40px;
+}
+
+#about {
+  text-align: center;
+}
+
+#about p,
+#fitness p {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.info-grid {
+  margin: 30px 0;
+}
+.row {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.col-4 {
+  width: 31.33%;
+  margin: 1%;
+  /* add padding & box-shadow to give appearance of cards */
+  box-shadow: 5px 5px 10px #808080;
+  padding: 30px;
+}
+.info-grid-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.info-grid-item input {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.info-grid-item p {
+  max-width: 480px !important;
+}
+
+/* .info-grid-item img:hover {
+    filter: brightness(65%);
+} */
+
+/*---------------------------------
+    NUTRITION & MINDSET SECTIONS
+---------------------------------*/
+#nutrition,
+#mindset {
+  width: 85%;
+  margin: auto;
+}
+.col-6 {
+  width: 45%;
+  margin: 2%;
+  /* add padding & box-shadow to give appearance of cards */
+  box-shadow: 5px 5px 10px #808080;
+  padding: 20px;
+}
+
+.col-6-img {
+  overflow: hidden;
+  box-shadow: 5px 5px 10px #808080;
+  height: 100%;
+}
+
+.col-6-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#nutrition .content,
+#mindset .content {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+}
+#nutrition p,
+#mindset p {
+  margin-bottom: 25px;
+}
+
+/* .nutrition-left img, .mindset-right img {
+    transition: filter .4s ease;
+}
+.nutrition-left img:hover, .mindset-right img:hover {
+    filter: brightness(65%);
+} */
+
+/*-------------------
+    FITNESS SECTION
+-------------------*/
+
+#fitness {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+/* .fitness-grid-item {
+  overflow: hidden;
+} */
+
+/* -- SEE .grid-img on line 122 
+  very important for image-overflow:hidden on all images --*/
+
+.fitness-grid-item input {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.fitness-grid-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.fitness-grid-item p {
+  max-width: 480px !important;
+  margin: auto;
+}
+
+/*-------------------
+    CONTACT SECTION
+-------------------*/
+#contact {
+  padding: 0;
+}
+.contact-jumbotron {
+  padding: 8em 0;
+  /* background: royalblue; */
+  background: #051d24;
+  color: #ffffff;
+  text-align: center;
+}
+.contact-jumbotron h1,
+.contact-jumbotron h3 {
+  padding: 30px 0;
+}
+.contact-jumbotron .btn {
+  margin: 10px;
+}
+.social a {
+  color: #ffffff;
+  padding: 10px;
+}
+.social a:hover {
+  color: #ff0000dd;
+  transition: 0.6s ease;
+}
+
+/*------------------------------
+    Lightbox
+------------------------------*/
+
+.lightbox h3 {
+  color: #fff;
+  /* text-align: center; */
+  padding-top: 2rem;
+  margin-bottom: -2rem;
+}
+.lightbox img {
+  max-width: 1199px;
+  height: 100vh;
+  margin: auto;
+  /* padding: 2%; */
+  object-fit: contain;
+}
+.lightbox img:hover {
+  transform: none;
+}
+.lightbox {
+  /** Default lightbox to hidden */
+  display: none;
+
+  /** Position and style */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #282e4d;
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+
+  /** Unhide lightbox **/
+  display: block;
+}
+.lightbox {
+  /* Add Animation - Zoom in the Modal 
+	transition: 0.3s;*/
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/*------------------------------
+    RESPONSIVE MEDIA QUERIES
+------------------------------*/
+
+@media (max-width: 1199px) {
+  #nutrition,
+  #mindset {
+    width: 100%;
+  }
+  #fitness {
+    width: 100%;
+  }
+  .col-6.half {
+    width: 65%;
+  }
+}
+@media (max-width: 991px) {
+  .info-grid {
+    margin: 0;
+  }
+  .col-4 {
+    width: 48%;
+    margin: 25px 1%;
+  }
+  .col-6 {
+    margin: 25px 2%;
+  }
+  .col-6.half {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .col-4 {
+    width: 98%;
+    margin: 1%;
+  }
+  .col-6 {
+    width: 98%;
+    margin: 25px 1%;
+  }
+  .col-6.half {
+    width: 98%;
+  }
+  .lightbox:target {
+    /** hide lightbox **/
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  section {
+    padding: 20px;
+  }
+}
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */

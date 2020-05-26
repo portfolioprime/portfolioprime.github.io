@@ -1,0 +1,331 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); */
+
+@font-face {
+    font-family: "Open Sans Light";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local("Open Sans Light"), local("OpenSans-Light"),
+      url("fonts/OpenSans-Light.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Open Sans Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Open Sans Regular"), local("OpenSans-Regular"),
+      url("fonts/OpenSans-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Open Sans Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"),
+      url("fonts/OpenSans-Bold.ttf") format("truetype");
+  }
+  
+:root {
+    --primary-color: green;
+    --secondary-color: orange;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-top: 25px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+img {
+    transition: transform .4s, filter .4s;
+    display: block;
+    vertical-align: baseline;
+}
+/* img:hover {
+    filter: brightness(65%);
+    transform: scale(1.1);
+} */
+
+/*----------------------
+    Showcase Section
+----------------------*/
+#showcase {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #fff;
+    text-shadow: 0 0 5px #333;
+}
+
+.container-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--primary-color) url('images/food-cover06.png') no-repeat center center/cover;
+}
+.container-video::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    /* background: radial-gradient(#0000000d,#44444414,#000); */
+}
+.container-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.content {
+    z-index: 10;
+    display: inline-table;
+    /* background: green; */
+    /* background: #363e36; */
+    background: #363e36a3;
+    color: orange;
+    padding: 30px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px; 
+    background: var(--primary-color);
+    color: #fff;
+    margin: 25px 5px 0 5px;
+    box-shadow: 0 0 5px #444;
+    transition: transform .4s ease, color .4s;
+    text-shadow: none;
+}
+.btn:hover {
+    transform: scale(.95);
+    color: #333;
+    transition: ease.4s;
+}
+.btn-secondary {
+    background: orange;
+}
+/*----------------------
+    About Info Section
+----------------------*/
+#about {
+    text-align: center;
+    padding: 40px;
+}
+#about p {
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+.row {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col-4 {
+    /* display: inline-block; */
+    width: 31.3%;
+    margin: 1%;
+    overflow: hidden;
+}
+.col-4.info-grid-item img {
+    width: 100%;
+    overflow: hidden;
+    transition: filter .4s;
+}
+.col-4.info-grid-item img:hover {
+    filter: brightness(65%);
+}
+
+
+/*----------------------
+    Menu Gallery Section
+----------------------*/
+#menu {
+    padding: 40px 20px 80px;
+    background: #efefef4d;
+}
+.menu-grid {
+    max-width: 75%;
+    margin: auto;
+    /* padding: 40px; */
+    text-align: center;
+}
+.col-6 {
+    width: 46%;
+    margin: 2%;
+    overflow: hidden;
+}
+.col-6.menu-grid-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform .4s, filter .4s;
+    display: block;
+}
+.col-6.menu-grid-item img:hover {
+    filter: brightness(65%);
+    transform: scale(1.1);
+}
+
+ 
+/*----------------------
+    Bookings Section
+----------------------*/
+#bookings {
+    text-align: center;
+    background: radial-gradient(#0000000d,#44444414,#000);
+}
+.bookings-jumbotron {
+    background: var(--primary-color) url('images/food-cover02.png') fixed;
+    padding: 12rem 20px;
+    position: relative;
+    color: #fff;
+}
+.bookings-jumbotron::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: radial-gradient(#0000000d,#44444414,#000); */
+    background: rgba(0, 0, 0, 0.35);
+}
+.bookings-content {
+    z-index: 10;
+    position: relative;
+}
+.bookings-content h3 {
+    background: gray;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.bookings-jumbotron .btn-secondary {
+    box-shadow: 0 0 5px #365c36;
+}
+.btn-secondary .fab {
+    vertical-align: sub;
+    padding-right: 5px;
+}
+
+
+/*----------------------
+    Content Section
+----------------------*/
+#contact {
+    background: radial-gradient(#333,#111);
+    /* height: 300px; */
+    padding: 10px 0 40px 0;
+    color: #fff;
+    text-align: center;
+}
+#contact h2 {
+    padding: 30px 0;
+    border-bottom: 1px solid #444;
+    display: inline-block;
+}
+.social {
+    padding: 30px 0;
+}
+.social a {
+    margin: 0 10px;
+    color: #fff;
+}
+.social a:hover {
+    color: var(--secondary-color);
+    transition: ease .3s;
+}
+@media (max-width: 1199px) {
+    .menu-grid {
+        max-width: 100%;
+    }
+}
+@media (max-width: 991px) {
+    .col-4.info-grid-item {
+        width: 48%;
+    }
+}
+@media (max-width: 767px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .col-4.info-grid-item {
+        width: 100%;
+    }
+    .col-6 {
+        width: 96%;
+    }
+}
+@media (max-width: 575px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */

@@ -1,0 +1,614 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Dancing+Script:wght@400;600;700&display=swap"); */
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Dancing Script'), local('Dancing Script'), url('fonts/DancingScript-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Dancing Script'), local('Dancing Script'), url('fonts/DancingScript-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Dancing Script'), local('Dancing Script'), url('fonts/DancingScript-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Cormorant Garamond Light Italic'), local('CormorantGaramond-LightItalic'), url('fonts/CormorantGaramond-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Cormorant Garamond Light'), local('CormorantGaramond-Light'), url('fonts/CormorantGaramond-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Cormorant Garamond Medium'), local('CormorantGaramond-Medium'), url('fonts/CormorantGaramond-Medium.ttf') format('truetype');
+}
+
+:root {
+  --primary-color: #ff8f00de;
+  --secondary-color: #051d24d9;
+  --third-color: #a92250;
+  --forth-color: #f9eaea;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Dancing Script", cursive;
+  color: var(--third-color);
+}
+
+#showcase h1,
+#contact h1,
+#showcase h3,
+#contact h3 {
+  color: #fff;
+  text-shadow: #5e0f17 0 0 5px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-top: 25px;
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.btn {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+}
+
+/*-----------------
+    NAVIGATION 
+-----------------*/
+
+/*-------------------
+    SHOWCASE SECTION
+-------------------*/
+#showcase {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.video-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: grey url("images/couple-104.png") no-repeat center center/cover;
+}
+
+.video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #051d2487;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.content {
+  z-index: 10;
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 25px;
+  background: #5e0f17;
+  background: radial-gradient(#bf2861, #5e0f17);
+  border: 1px solid #5e0f17;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05) translateY(5px);
+  transition: ease 0.4s;
+}
+
+.btn-primary {
+  margin-top: 0;
+}
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+/*-------------------------------------
+   IMAGE OVERFLOW & HOVER ANIMATIONS
+--------------------------------------*/
+.grid-img {
+  overflow: hidden;
+  box-shadow: 5px 5px 10px #808080;
+}
+/* .fitness-grid .row .fitness-grid-item .grid-img img {
+  transition: filter 0.4s ease, transform 0.4s ease;
+  overflow: hidden;
+  display: block;
+}
+
+.fitness-grid .row .fitness-grid-item:hover .grid-img img {
+  filter: brightness(65%);
+  transform: scale(1.1);
+} */
+
+img {
+  transition: filter 0.4s ease, transform 4s ease;
+  display: block;
+}
+
+img:hover {
+  filter: brightness(108%);
+  transform: scale(1.1);
+}
+/*-- LIGHTBOX uses INPUT TYPE="IMAGE" instead of IMG --*/
+input {
+  transition: filter 0.4s ease, transform 4s ease;
+  display: block;
+}
+
+input:hover {
+  filter: brightness(95%);
+  transform: scale(1.1);
+}
+
+/*-------------------
+    ABOUT SECTION
+-------------------*/
+
+section {
+  padding: 40px;
+}
+
+#about {
+  text-align: center;
+  background: #f5f5f5;
+}
+
+#about p,
+#fitness p {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.info-grid {
+  margin: 30px 0;
+}
+.row {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.col-4 {
+  width: 31.33%;
+  margin: 1%;
+  /* add padding & box-shadow to give appearance of cards */
+  box-shadow: 5px 5px 10px #808080;
+  padding: 50px;
+}
+.info-grid-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.info-grid-item input {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.info-grid-item p {
+  max-width: 480px !important;
+}
+
+/* .info-grid-item img:hover {
+    filter: brightness(65%);
+} */
+
+/*---------------------------------
+    NUTRITION & MINDSET SECTIONS
+---------------------------------*/
+#nutrition {
+  background: #fbecf5;
+}
+#mindset {
+  background: #f5f5f5;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+#slider {
+  overflow: hidden;
+  max-width: 400px;
+  max-height: 600px;
+  box-shadow: 5px 5px 10px #808080;
+  margin: auto;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  left: 0;
+  margin: 0;
+  animation: 15s slider infinite;
+}
+#slider figure .col-6-img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.col-6 {
+  width: 45%;
+  margin: 2%;
+  /* add padding & box-shadow to give appearance of cards */
+  box-shadow: 5px 5px 10px #808080;
+  padding: 50px;
+}
+.col-6.half {
+  box-shadow: none !important;
+  padding: 0;
+}
+.col-6-img {
+  overflow: hidden;
+  box-shadow: 5px 5px 10px #808080;
+  height: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.col-6-img img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+#nutrition .content,
+#mindset .content {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+}
+#nutrition p,
+#mindset p {
+  margin-bottom: 25px;
+}
+
+/* .nutrition-left img, .mindset-right img {
+    transition: filter .4s ease;
+}
+.nutrition-left img:hover, .mindset-right img:hover {
+    filter: brightness(65%);
+} */
+
+/*-------------------
+    FITNESS SECTION
+-------------------*/
+
+#fitness {
+  background: #efefef;
+}
+.fitness-grid {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+/* .fitness-grid-item {
+  overflow: hidden;
+} */
+
+/* -- SEE .grid-img on line 122 
+  very important for image-overflow:hidden on all images --*/
+
+.fitness-grid-item input {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.fitness-grid-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.fitness-grid-item p {
+  max-width: 480px !important;
+  margin: auto;
+}
+
+/*-------------------
+    CONTACT SECTION
+-------------------*/
+#contact {
+  padding: 0;
+}
+.contact-jumbotron {
+  padding: 8em 0;
+  background: #a92250 url('images/rings01.png') center/cover;
+  /* background: #051d24; */
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+.contact-jumbotron:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.contact-jumbotron h1,
+.contact-jumbotron h3 {
+  padding: 30px 0;
+}
+.contact-jumbotron .btn {
+  margin: 10px;
+}
+.social a {
+  color: #ffffff;
+  padding: 10px;
+}
+.social a:hover {
+  color: #5e0f17;
+  transition: 0.6s ease;
+}
+
+/*------------------------------
+    Lightbox
+------------------------------*/
+
+.lightbox h3 {
+  color: #fff;
+  /* text-align: center; */
+  padding-top: 2rem;
+  margin-bottom: -2rem;
+}
+.lightbox img {
+  max-width: 1199px;
+  height: 100vh;
+  margin: auto;
+  /* padding: 2%; */
+  object-fit: contain;
+}
+.lightbox img:hover {
+  transform: none;
+}
+.lightbox {
+  /** Default lightbox to hidden */
+  display: none;
+
+  /** Position and style */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #282e4d;
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+
+  /** Unhide lightbox **/
+  display: block;
+}
+.lightbox {
+  /* Add Animation - Zoom in the Modal 
+	transition: 0.3s;*/
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/*------------------------------
+    RESPONSIVE MEDIA QUERIES
+------------------------------*/
+
+@media (max-width: 1199px) {
+  .col-4 {
+    width: 48%;
+    margin: 25px 1%;
+  }
+  .container {
+    width: 100%;
+  }
+  #nutrition,
+  #mindset {
+    width: 100%;
+  }
+  #fitness {
+    width: 100%;
+  }
+  .fitness-grid {
+    width: 100%;
+  }
+  .col-6.half {
+    width: 85%;
+  }
+}
+@media (max-width: 991px) {
+  .info-grid {
+    margin: 0;
+  }
+  .col-4 {
+    width: 65%;
+    margin: 1%;
+    padding: 35px;
+}
+  .col-6 {
+    margin: 25px 2%;
+  }
+  #fitness {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .col-4 {
+    width: 85%;
+  }
+  .col-6 {
+    width: 98%;
+    margin: 25px 1%;
+  }
+  .col-6.half {
+    width: 98%;
+  }
+  .fitness-grid {
+    width: 90%;
+  }
+  .lightbox:target {
+    /** hide lightbox **/
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  section {
+    padding: 20px;
+  }
+  #about {
+    padding: 10px;
+  }
+  .col-4 {
+    width: 94%;
+    margin: 1%;
+    padding: 15px;
+  }
+  .col-6 {
+    padding: 30px;
+  }
+}
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */

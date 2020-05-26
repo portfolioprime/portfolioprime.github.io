@@ -1,50 +1,54 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;700&family=Oswald:wght@400;600;700&family=Roboto+Condensed:wght@700&display=swap"); */
 
-
 /* FONT FACE LOADER */
 @font-face {
-  font-family: 'Amatic SC';
+  font-family: "Amatic SC";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url('fonts/AmaticSC-Regular.ttf') format('truetype');
+  src: local("Amatic SC Regular"), local("AmaticSC-Regular"),
+    url("fonts/AmaticSC-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Amatic SC';
+  font-family: "Amatic SC";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url('fonts/AmaticSC-Bold.ttf') format('truetype');
+  src: local("Amatic SC Bold"), local("AmaticSC-Bold"),
+    url("fonts/AmaticSC-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Dancing Script';
+  font-family: "Dancing Script";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Dancing Script'), local('Dancing Script'), url('fonts/DancingScript-Regular.ttf') format('truetype');
+  src: local("Dancing Script"), local("Dancing Script"),
+    url("fonts/DancingScript-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Dancing Script';
+  font-family: "Dancing Script";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Dancing Script'), local('Dancing Script'), url('fonts/DancingScript-Bold.ttf') format('truetype');
+  src: local("Dancing Script"), local("Dancing Script"),
+    url("fonts/DancingScript-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Oswald'), local('Oswald'), url('fonts/Oswald-Regular.ttf') format('truetype');
+  src: local("Oswald"), local("Oswald"),
+    url("fonts/Oswald-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Oswald'), local('Oswald'), url('fonts/Oswald-Bold.ttf') format('truetype');
+  src: local("Oswald"), local("Oswald"),
+    url("fonts/Oswald-Bold.ttf") format("truetype");
 }
-
 
 :root {
   --primary-color: #24261f;
@@ -87,6 +91,7 @@ body {
   font-family: serif;
   line-height: 1.1;
   font-size: 1rem;
+  overflow-x: hidden;
 }
 
 section {
@@ -97,6 +102,7 @@ section {
 }
 .content {
   max-width: 400px;
+  z-index: 20;
 }
 h1 {
   font-size: 4rem;
@@ -134,15 +140,19 @@ p {
   text-transform: uppercase;
   font-size: 0.9rem;
   color: var(--sixth-color);
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
 }
 
-h1, h2, h3, h4, p {
-    z-index: 10;
-    position: relative;
+h1,
+h2,
+h3,
+h4,
+p {
+  z-index: 10;
+  position: relative;
 }
 i {
-    z-index: 9;
+  z-index: 9;
 }
 
 /* --- Page 1 ---*/
@@ -167,28 +177,29 @@ i {
   height: 100vh;
 }
 #page-2 .content {
-    /* background: var(--forth-color); */
-    border-radius: 22%;
-    padding: 25px 0;
+  /* background: var(--forth-color); */
+  border-radius: 22%;
+  padding: 25px 0;
 }
 #page-2 i {
-    color: var(--forth-color);
-    font-size: 500px;
-    position: absolute;
-    top: 56%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 2;
+  color: var(--forth-color);
+  font-size: 500px;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
-#page-2 h1, h2 {
-    font-weight: 300;
-    letter-spacing: -2px;
+#page-2 h1,
+h2 {
+  font-weight: 300;
+  letter-spacing: -2px;
 }
 #page-2 h4 {
-    color: #fff;
+  color: #fff;
 }
 #page-2 h2 {
-    color: var(--second-color);
+  color: var(--second-color);
 }
 
 /* --- Page 3 ---*/
@@ -200,35 +211,35 @@ i {
   height: 100vh;
 }
 #page-3 .content {
-    text-transform: uppercase;
-    transform: rotateZ(353deg) skew(-8deg);
-    font-weight: 300;
-    z-index: 10;
+  text-transform: uppercase;
+  transform: rotateZ(353deg) skew(-8deg);
+  font-weight: 300;
+  z-index: 10;
 }
 #page-3 i {
-    color: #933a2f;
-    font-size: 500px;
-    position: absolute;
-    top: 43.5%;
-    left: 50%;
-    transform:rotateZ(353deg) skew(-8deg) translate(-50%,-50%);
-    z-index: 2;
+  color: #933a2f;
+  font-size: 500px;
+  position: absolute;
+  top: 43.5%;
+  left: 50%;
+  transform: rotateZ(353deg) skew(-8deg) translate(-50%, -50%);
+  z-index: 2;
 }
 #page-3 h2 {
-    color: #933a2f;
-    font-size: 2.4rem;
-    font-weight: 600;
+  color: #933a2f;
+  font-size: 2.4rem;
+  font-weight: 600;
 }
 #page-3 h4 {
-    font-family: "Oswald", sans-serif;
-    color:#fff;
-    font-weight: 400;
-    font-size: 2.4rem;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 2.4rem;
 }
 #page-3 p {
-    transform: rotateZ(353deg) skew(-8deg) translateY(57px);
-    margin-top: 25px;
-    background: #1d1e1aa1;
+  transform: rotateZ(353deg) skew(-8deg) translateY(57px);
+  margin-top: 25px;
+  background: #1d1e1aa1;
 }
 
 /* --- Page 4 ---*/
@@ -240,7 +251,7 @@ i {
   height: 100vh;
 }
 #page-4 h4 {
-    color: var(--third-color);
+  color: var(--third-color);
 }
 
 /* --- Page 5 ---*/
@@ -252,7 +263,7 @@ i {
   height: 100vh;
 }
 #page-5 h4 {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 /* --- Page 6 ---*/
 #page-6 {
@@ -262,17 +273,19 @@ i {
   width: 100%;
   height: 100vh;
 }
-#page-6 h1, h2, h4 {
-    font-family: "Oswald", sans-serif;
+#page-6 h1,
+h2,
+h4 {
+  font-family: "Oswald", sans-serif;
 }
-#page-6 h1, #page-7 h3 {
-    color: var(--forth-color);
+#page-6 h1,
+#page-7 h3 {
+  color: var(--forth-color);
 }
 #page-6 h4 {
-    color: var(--third-color);
-    text-transform: uppercase;
+  color: var(--third-color);
+  text-transform: uppercase;
 }
-
 
 /* --- Page 7 ---*/
 #page-7 {
@@ -281,4 +294,13 @@ i {
   color: #fff;
   width: 100%;
   height: 100vh;
+}
+
+@media (max-width: 575px) {
+  .content {
+    scale: 70%;
+  }
+  .content p {
+    scale: 150%;
+  }
 }

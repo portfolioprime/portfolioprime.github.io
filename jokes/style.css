@@ -1,3 +1,6 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;700&family=Oswald:wght@400;600;700&family=Roboto+Condensed:wght@700&display=swap"); */
+
+
 /* FONT FACE LOADER */
 @font-face {
   font-family: 'Amatic SC';
@@ -42,6 +45,7 @@
   src: local('Oswald'), local('Oswald'), url('fonts/Oswald-Bold.ttf') format('truetype');
 }
 
+
 :root {
   --primary-color: #24261f;
   --second-color: #6e6c9b;
@@ -60,9 +64,9 @@
 a {
   text-decoration: none;
   outline: none;
-  color: #fff;
+  color: transparent;
 }
-/* a.slide {
+a.slide {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -71,19 +75,18 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   /* max-width: 400px;
-    margin: 0 auto; 
-}*/
+    margin: 0 auto; */
+}
 
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: serif;
   line-height: 1.1;
   font-size: 1rem;
-  color: #fff;
 }
 
 section {
@@ -93,8 +96,7 @@ section {
   text-align: center;
 }
 .content {
-  max-width: 800px;
-  z-index: 1;
+  max-width: 400px;
 }
 h1 {
   font-size: 4rem;
@@ -116,6 +118,12 @@ h3 {
   color: var(--sixth-color);
   padding: 20px 0;
 }
+h4 {
+  font-size: 2.8rem;
+  font-family: "Amatic SC", cursive;
+  color: var(--forth-color);
+}
+
 p {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -150,115 +158,127 @@ i {
   text-transform: uppercase;
 }
 
- /* Style the Image Used to Trigger the Modal */
- #myModalTrigger {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+/* --- Page 2 ---*/
+#page-2 {
+  position: relative;
+  background: var(--second-color);
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+#page-2 .content {
+    /* background: var(--forth-color); */
+    border-radius: 22%;
+    padding: 25px 0;
+}
+#page-2 i {
+    color: var(--forth-color);
+    font-size: 500px;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+#page-2 h1, h2 {
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+#page-2 h4 {
+    color: #fff;
+}
+#page-2 h2 {
+    color: var(--second-color);
 }
 
-/* #myModalTrigger:hover {opacity: 0.7;} */
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  padding: 100px 10px;
+/* --- Page 3 ---*/
+#page-3 {
+  position: relative;
+  background: var(--third-color);
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+#page-3 .content {
+    text-transform: uppercase;
+    transform: rotateZ(353deg) skew(-8deg);
+    font-weight: 300;
+    z-index: 10;
+}
+#page-3 i {
+    color: #933a2f;
+    font-size: 500px;
+    position: absolute;
+    top: 43.5%;
+    left: 50%;
+    transform:rotateZ(353deg) skew(-8deg) translate(-50%,-50%);
+    z-index: 2;
+}
+#page-3 h2 {
+    color: #933a2f;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+#page-3 h4 {
+    font-family: "Oswald", sans-serif;
+    color:#fff;
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+#page-3 p {
+    transform: rotateZ(353deg) skew(-8deg) translateY(57px);
+    margin-top: 25px;
+    background: #1d1e1aa1;
 }
 
-ul {
-  list-style: none;
+/* --- Page 4 ---*/
+#page-4 {
+  position: relative;
+  background: var(--forth-color);
+  color: #fff;
+  width: 100%;
+  height: 100vh;
 }
-li {
-  line-height: 3;
-  font-size: 1.5rem;
-  padding-left: 20px;
-}
-li a:hover {
-  color: var(--forth-color);
-}
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  height: 80vh;
-  background: #000000dd;
-  z-index: 100;
-  border: 2px solid #000;
-  border-radius: 15px;
-  padding: 30px 10px;
-  /* box-shadow: 0 0 100px #111 inset; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
+#page-4 h4 {
+    color: var(--third-color);
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+/* --- Page 5 ---*/
+#page-5 {
+  position: relative;
+  background: var(--fifth-color);
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+#page-5 h4 {
+    color: var(--primary-color);
+}
+/* --- Page 6 ---*/
+#page-6 {
+  position: relative;
+  background: var(--sixth-color);
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+#page-6 h1, h2, h4 {
+    font-family: "Oswald", sans-serif;
+}
+#page-6 h1, #page-7 h3 {
+    color: var(--forth-color);
+}
+#page-6 h4 {
+    color: var(--third-color);
+    text-transform: uppercase;
 }
 
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
 
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+/* --- Page 7 ---*/
+#page-7 {
+  position: relative;
+  background: var(--primary-color);
+  color: #fff;
+  width: 100%;
+  height: 100vh;
 }
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-  li {
-    line-height: 2;
-    font-size: 1.5rem;
-  }  
-} 
-@media only screen and (max-width: 575px){
-  li {
-    line-height: 2.5;
-    font-size: 1.25rem;
-  }  
-} 

@@ -298,9 +298,22 @@ h4 {
 
 @media (max-width: 575px) {
   .content {
-    scale: 70%;
+    padding: 30px;
   }
-  .content p {
-    scale: 150%;
+  .content h4 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+  .content h1 {
+    font-size: 3rem;
+  }
+  .content h2 {
+    font-size: 2.5rem;
+  }
+  #page-2 i {
+    font-size: 400px;
+  }
+  #page-3 i {
+    font-size: 450px;
   }
 }

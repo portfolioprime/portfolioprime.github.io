@@ -24,7 +24,15 @@
     src: local("Open Sans Bold"), local("OpenSans-Bold"),
       url("fonts/OpenSans-Bold.ttf") format("truetype");
   }
-  
+  @font-face {
+    font-family: "Dancing Script";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Dancing Script Bold"), local("DancingScript-Bold"),
+      url("fonts/DancingScript-Bold.ttf") format("truetype");
+  }
+
 :root {
     --primary-color: green;
     --secondary-color: orange;
@@ -47,6 +55,7 @@ a {
 }
 
 h1 {
+    font-family: 'Dancing Script', cursive;
     font-size: 4rem;
     font-weight: 300;
     line-height: 1.2;

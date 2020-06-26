@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --bg-color: #06051e;
+  --d-purple: #222146;
+  --l-purple: #ce39ce;
+  --pink: #ff4f79;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  background-color: var(--d-purple);
+}
+
+.container {
+  width: 100%;
+  /* max-width: 120rem; */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+nav {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Nav Logo */
+.navbar-brand {
+  background-color: var(--pink);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  display: flex;
+  transition: transform 350ms ease, background-color 150ms ease;
+}
+
+.navbar-brand:hover {
+  background-color: var(--l-purple);
+  transform: rotateY(180deg);
+}
+
+.navbar-brand ion-icon {
+  font-size: 4rem;
+  color: #fff;
+  margin: auto;
+}
+
+/* Nav Menu */
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  position: relative;
+  line-height: 8rem;
+}
+
+.nav-item::before {
+  content: "";
+  background-color: var(--pink);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 650ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nav-item:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-link {
+  font-size: 1.8rem;
+  display: block;
+  margin: 0 2rem;
+}
+
+/* Hamburger */
+.hamburger {
+  width: 3.6rem;
+  height: 1.8rem;
+  position: relative;
+  cursor: pointer;
+  line-height: 5rem;
+  z-index: 1500;
+  /* hide hamburger on large screens */
+  display: none;
+}
+
+.hamburger .line {
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  display: block;
+  right: 0;
+  transition: all 350ms;
+}
+.hamburger .line:nth-child(1) {
+  top: 0;
+}
+.hamburger .line:nth-child(2) {
+  top: 50%;
+  margin-top: -1px;
+  width: 2.8rem;
+}
+.hamburger .line:nth-child(3) {
+  top: 100%;
+  margin-top: -2px;
+  width: 2rem;
+}
+/* hamburger transition on click */
+.hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg) translateY(.8rem);
+    width: 2rem;
+    top: 4px;
+}
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-0.8rem);
+    width: 2rem;
+}
+
+
+/* SHOWCASE */
+#showcase {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+/* .img-container {
+  width: 100%;
+    height: 100%;
+    overflow: hidden;
+}*/
+
+/* .img-container img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+} */
+
+.content {
+  z-index: 2;
+}
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 25px;
+  background: var(--pink);
+  font-size: 1.6rem;
+  transition: background 250ms;
+}
+.btn:hover {
+    background: var(--l-purple);
+}
+
+/* 2 COL-LAYOUT */
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-img {
+  width: 60%;
+}
+.col-img img {
+  width: 100%;
+}
+.col-content {
+  width: 40%;
+}
+.text-right {
+  text-align: right;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .content {
+    text-align: center;
+  }
+  .col-img,
+  .col-content {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    margin-top: 20vh;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 991px) {
+    /* hide menu on small screens */
+  .nav-list {
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    background-color: var(--d-purple);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    z-index: 10;
+    transition: bottom 650ms;
+    /* opacity: 0; */
+  }
+  .nav-list.active {
+      bottom: 0;
+  }
+  /* show hamburger on small screens */
+  .hamburger {
+      display: block;
+  }
+
+}

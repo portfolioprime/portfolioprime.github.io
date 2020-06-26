@@ -1,45 +1,51 @@
 /* FONT FACE LOADER */
 @font-face {
-  font-family: 'Amatic SC';
+  font-family: "Amatic SC";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url('fonts/AmaticSC-Regular.ttf') format('truetype');
+  src: local("Amatic SC Regular"), local("AmaticSC-Regular"),
+    url("fonts/AmaticSC-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Amatic SC';
+  font-family: "Amatic SC";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url('fonts/AmaticSC-Bold.ttf') format('truetype');
+  src: local("Amatic SC Bold"), local("AmaticSC-Bold"),
+    url("fonts/AmaticSC-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Dancing Script';
+  font-family: "Dancing Script";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Dancing Script'), local('Dancing Script'), url('fonts/DancingScript-Regular.ttf') format('truetype');
+  src: local("Dancing Script"), local("Dancing Script"),
+    url("fonts/DancingScript-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Dancing Script';
+  font-family: "Dancing Script";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Dancing Script'), local('Dancing Script'), url('fonts/DancingScript-Bold.ttf') format('truetype');
+  src: local("Dancing Script"), local("Dancing Script"),
+    url("fonts/DancingScript-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Oswald'), local('Oswald'), url('fonts/Oswald-Regular.ttf') format('truetype');
+  src: local("Oswald"), local("Oswald"),
+    url("fonts/Oswald-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Oswald'), local('Oswald'), url('fonts/Oswald-Bold.ttf') format('truetype');
+  src: local("Oswald"), local("Oswald"),
+    url("fonts/Oswald-Bold.ttf") format("truetype");
 }
 
 :root {
@@ -72,7 +78,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center; */
-  /* max-width: 400px;
+/* max-width: 400px;
     margin: 0 auto; 
 }*/
 
@@ -95,6 +101,7 @@ section {
 .content {
   max-width: 800px;
   z-index: 1;
+  text-shadow: 0 0 10px #111;
 }
 h1 {
   font-size: 4rem;
@@ -120,27 +127,36 @@ p {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   margin-top: 35px;
-  background: #1d1e1a;
+  /* background: #1d1e1a; */
+  background: #98c416;
   border-radius: 10px;
   padding: 10px 20px;
   text-transform: uppercase;
   font-size: 0.9rem;
-  color: var(--sixth-color);
-  letter-spacing: .3px;
+  /* color: var(--sixth-color); */
+  color: #222;
+  letter-spacing: 2px;
+  margin-right: -2px;
+  display: inline-block;
 }
 
-h1, h2, h3, h4, p {
-    z-index: 10;
-    position: relative;
+h1,
+h2,
+h3,
+h4,
+p {
+  z-index: 10;
+  position: relative;
 }
 i {
-    z-index: 9;
+  z-index: 9;
 }
 
 /* --- Page 1 ---*/
 #page-1 {
   position: relative;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
+  background: radial-gradient(#123, #000);
   color: #fff;
   width: 100%;
   height: 100vh;
@@ -150,8 +166,8 @@ i {
   text-transform: uppercase;
 }
 
- /* Style the Image Used to Trigger the Modal */
- #myModalTrigger {
+/* Style the Image Used to Trigger the Modal */
+#myModalTrigger {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -170,8 +186,9 @@ i {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  /* background-color: rgb(27, 130, 170); Fallback color */
+  /*background-color: rgba(0, 0, 0, 0.9);  Black w/ opacity */
+  background: radial-gradient(#123, #000);
   padding: 100px 10px;
 }
 
@@ -182,11 +199,15 @@ li {
   line-height: 3;
   font-size: 1.35rem;
   padding-left: 20px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 li a {
   padding: 10px 30px;
   color: #eee;
-  background: #040403;
+  /* background: #040403; */
+  /* background: #135575; */
+  background: #1355751f;
   border-radius: 35px;
 }
 li a:hover {
@@ -203,7 +224,8 @@ li a:hover {
   width: 80%;
   /* max-width: 700px;
   height: 80vh; */
-  background: radial-gradient(#111, #101010, #000, #000);
+  /* background: radial-gradient(#111, #101010, #000, #000); */
+  /* background-attachment: fixed; */
   /* background: #000000dd; */
   z-index: 100;
   /* border: 2px solid #000; */
@@ -212,7 +234,7 @@ li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: justify;
+  text-align: left;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -228,25 +250,32 @@ li a:hover {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content,
+#caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* The Close Button */
 .close {
-  position: absolute;
+  position: fixed;
   top: 15px;
   right: 35px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .close:hover,
@@ -257,18 +286,30 @@ li a:hover {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
   li {
     line-height: 2;
-    font-size: 1.5rem;
-  }  
-} 
-@media only screen and (max-width: 575px){
-  li {
-    line-height: 2.5;
     font-size: 1.25rem;
-  }  
-} 
+  }
+  li a {
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+  }
+  li a:hover {
+    padding: 0;
+    color: #eee;
+    background: transparent;
+    border-radius: 0;
+  }
+  
+}
+@media only screen and (max-width: 575px) {
+  li {
+    line-height: 1;
+    font-size: 1.15rem;
+  }
+}

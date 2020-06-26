@@ -180,7 +180,7 @@ i {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 165px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -189,7 +189,7 @@ i {
   /* background-color: rgb(27, 130, 170); Fallback color */
   /*background-color: rgba(0, 0, 0, 0.9);  Black w/ opacity */
   background: radial-gradient(#123, #000);
-  padding: 100px 10px;
+  padding: 165px 10px;
 }
 
 ul {
@@ -199,34 +199,39 @@ li {
   line-height: 3;
   font-size: 1.35rem;
   padding-left: 20px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   margin-left: 1rem;
 }
 li a {
-  padding: 10px 30px;
+  padding: 0;
   color: #eee;
   /* background: #040403; */
   /* background: #135575; */
-  background: #1355751f;
-  border-radius: 35px;
+  /* background: #1355751f; */
+  /* border-radius: 35px; */
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
 }
 li a:hover {
-  color: #111;
-  transition: ease 0.6s;
-  background: #81cec5;
-  padding: 10px 30px;
-  border-radius: 35px;
+  /* color: #111; */
+  color: #98c416;
+  /* background: #81cec5; */
+  padding: 10px 0 10px 30px;
+  /* border-radius: 35px; */
+  border-bottom: 3px solid #98c416;
 }
+
 /* Modal Content (Image) */
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  /* max-width: 700px;
-  height: 80vh; */
+  width: 100%;
+   max-width: 500px;
+  /*height: 80vh; */
   /* background: radial-gradient(#111, #101010, #000, #000); */
   /* background-attachment: fixed; */
   /* background: #000000dd; */
+  background: #1e3f6a2e;
   z-index: 100;
   /* border: 2px solid #000; */
   border-radius: 15px;
@@ -252,16 +257,31 @@ li a:hover {
 /* Add Animation - Zoom in the Modal */
 .modal-content,
 #caption {
-  animation-name: zoom;
+  animation-name: slide-up;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
   from {
     transform: scale(0);
+    opacity: 0;
   }
   to {
     transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 10;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -298,12 +318,14 @@ li a:hover {
     padding: 0;
     background: transparent;
     border-radius: 0;
+    border: none;
   }
   li a:hover {
     padding: 0;
     color: #eee;
     background: transparent;
     border-radius: 0;
+    border: none;
   }
   
 }

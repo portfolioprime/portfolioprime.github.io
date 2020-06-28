@@ -1,0 +1,364 @@
+/* FONTS Declaration */
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&family=Russo+One&display=swap");
+
+/* GLOBAL Styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* scroll-behavior: smooth; */
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  /* background: #06051e; */
+  color: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  /* font-size: 1.6rem; */
+  color: #222146;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* HEADER */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.8rem 0;
+  background: #2221467d;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.logo {
+  transition: transform 0.5s;
+}
+/* .logo:hover {
+    transform: rotateY(180deg);
+}
+.logo:hover i {
+    background: #ce39ce;
+} */
+.logo i {
+  font-size: 2.5rem;
+  background: #ff4f797d;
+  padding: 1rem;
+  border-radius: 50%;
+  color: #fff;
+}
+
+ul.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+li.nav-item {
+  padding: 0 2.2rem;
+  line-height: 2.5;
+}
+li.nav-item:last-child {
+  padding-right: 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* padding-bottom: 1.6rem; */
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* display: block; */
+  transform: scaleX(0);
+}
+li.nav-item:hover {
+  opacity: 0.8;
+}
+.nav-link:hover {
+  border-bottom: #ff4f79 solid 3px;
+  transform: scaleX(1);
+}
+
+.menu-toggle {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.1s;
+  display: none;
+  z-index: 1500;
+}
+/* .menu-toggle:hover {
+    transform: scale(1.1);
+} */
+.menu-toggle .fa-times {
+  display: none;
+}
+
+/* SHOWCASE */
+
+#showcase {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.img-container {
+  /* background: url(images/closeup-photo-of-purple-gemstones-1121123.jpg) center
+    center/cover; */
+  background: url(images/high-angle-photo-of-robot-2599244.jpg) center center/cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #06051eaa;
+}
+#showcase .content {
+  margin-top: 3.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+#showcase .content::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: 2rem;
+  width: 30rem;
+  height: 30rem;
+  /* background: #ff4f79aa; */
+  background: transparent;
+  z-index: -1;
+  transform: rotate(45deg);
+  margin: auto;
+  /* border: .5rem dashed #aaa; */
+  border: 5.5rem dashed #ff4f7933;
+  /* border: 13.5rem dashed #2d1348; */
+  border-style: solid;
+}
+
+.sup-headline {
+  font-family: "Russo One", cursive;
+  text-transform: capitalize;
+  line-height: 1;
+  font-size: 4rem;
+}
+.first-letter {
+  font-size: 5rem;
+  position: relative;
+  top: 0.5rem;
+  font-family: "Russo One", sans-serif;
+}
+.headline {
+  font-family: "Russo One", sans-serif;
+  font-size: 4rem;
+  /* color: #222146; */
+  /* color: #b83b66; */
+  color: #fff;
+  line-height: 1;
+}
+.sub-headline {
+  font-family: "Russo One", cursive;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+.asterisk {
+  margin: 0.7rem 0;
+  color: #b83b66;
+}
+.btn {
+  display: inline-block;
+  transition: transform 0.25s;
+  color: #fff;
+  background: #ff4f79;
+  padding: 0.8rem 1.8rem;
+  border-radius: 0.6rem;
+  text-transform: uppercase;
+}
+.btn:hover {
+  transform: scale(0.97);
+  opacity: 0.9;
+}
+.btn-showcase {
+  /* background: #222146; */
+  background: #434175;
+}
+
+/* SECTION APPS */
+section {
+  padding: 8rem 0;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+.row > div {
+  flex: 1;
+}
+.col-text {
+  /* text-align: center; */
+  margin: auto;
+}
+.global-headline {
+  text-align: center;
+  margin: 4rem 0;
+  z-index: 1;
+  position: relative;
+}
+.headline-color {
+  /* color: #222146; */
+  color: #434175;
+}
+.headline-dark {
+  color: #06051eaa;
+}
+.padding-right {
+  padding-right: 7rem;
+}
+.asterisk {
+  margin: 2.4rem 0;
+}
+.global-headline p {
+  line-height: 1.8;
+  margin-bottom: 2.4rem;
+}
+.btn-body {
+  font-size: 1.4rem;
+}
+
+.col-img {
+  height: 65vh;
+  text-align: center;
+}
+.col-img img {
+  width: auto;
+  max-width: 100%;
+}
+
+/* SECTION PROJECT */
+#projects {
+  background: #222146 url(images/time-displayed-on-top-of-a-building-1824273.jpg)
+    no-repeat center/cover;
+}
+.between {
+  min-height: 65vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.between::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #06051eaa;
+}
+
+/* SECTION EXPLORE */
+#explore {
+  background: #222146 url(images/book-coffee-computer-desk-430546.jpg)
+    no-repeat center/cover;
+}
+
+/* SECTION RESEARCH */
+.col-img-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+/* .col-img-group > img {
+  border: 1px solid #06051eaa;
+  padding: 2rem;
+  border-radius: 0.6rem;
+} */
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 991px) {
+  ul.nav-list {
+    /* display: none; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222146;
+    padding: 10rem 0;
+    border-bottom: 6rem solid #ff4f79;
+    transition: bottom 0.6s;
+    z-index: 1250;
+  }
+  li.nav-item {
+    padding: 0.5rem 0;
+    border-bottom: 0.3rem solid #ff4f79;
+  }
+  .open .nav-list {
+    bottom: 0;
+  }
+  .nav-link:hover {
+    border-bottom: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .open .menu-toggle .fa-bars {
+    display: none;
+  }
+  .open .menu-toggle .fa-times {
+    display: block;
+  }
+
+  .row {
+    display: block;
+  }
+  .padding-right {
+    padding-right: 0;
+  }
+}

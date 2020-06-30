@@ -38,15 +38,24 @@ img {
   min-width: 100%;
 }
 
+.offset::before {
+  content: "";
+  height: 63px;
+  margin-top: -63px;
+  display: block;
+}
+
 /* HEADER */
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 0.8rem 0;
-  background: #2221467d;
+  /* background: #5959697d; */
+  background: #434175;
+  z-index: 1600;
 }
 
 .container {
@@ -75,7 +84,7 @@ nav {
 .logo i {
   font-size: 2.5rem;
   background: #ff4f797d;
-  padding: 1rem;
+  padding: 1rem 0.9rem 1.2rem;
   border-radius: 50%;
   color: #fff;
 }
@@ -86,18 +95,21 @@ ul.nav-list {
 }
 
 li.nav-item {
-  padding: 0 2.2rem;
-  line-height: 2.5;
+  padding: 0 1.8rem;
+  /* line-height: 2.5; */
 }
 li.nav-item:last-child {
   padding-right: 0;
 }
 
 .nav-link {
+  font-family: "Russo One", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   color: #fff;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.5rem;
+  /* font-weight: 700; */
+  font-size: 1.4rem;
+  letter-spacing: 1.4px;
   /* padding-bottom: 1.6rem; */
   transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   /* display: block; */
@@ -138,7 +150,8 @@ li.nav-item:hover {
 .img-container {
   /* background: url(images/closeup-photo-of-purple-gemstones-1121123.jpg) center
     center/cover; */
-  background: url(images/high-angle-photo-of-robot-2599244.jpg) center center/cover;
+  background: url(images/high-angle-photo-of-robot-2599244.jpg) center
+    center/cover;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -180,7 +193,7 @@ li.nav-item:hover {
 }
 
 .sup-headline {
-  font-family: "Russo One", cursive;
+  font-family: "Russo One", sans-serif;
   text-transform: capitalize;
   line-height: 1;
   font-size: 4rem;
@@ -189,7 +202,6 @@ li.nav-item:hover {
   font-size: 5rem;
   position: relative;
   top: 0.5rem;
-  font-family: "Russo One", sans-serif;
 }
 .headline {
   font-family: "Russo One", sans-serif;
@@ -200,7 +212,7 @@ li.nav-item:hover {
   line-height: 1;
 }
 .sub-headline {
-  font-family: "Russo One", cursive;
+  font-family: "Russo One", sans-serif;
   font-size: 2.2rem;
   margin-bottom: 2rem;
 }
@@ -226,8 +238,8 @@ li.nav-item:hover {
   background: #434175;
 }
 
-/* SECTION APPS */
-section {
+/* SECTION ROBOTS */
+.section {
   padding: 8rem 0;
 }
 .row {
@@ -280,9 +292,10 @@ section {
 }
 
 /* SECTION PROJECT */
-#projects {
-  background: #222146 url(images/time-displayed-on-top-of-a-building-1824273.jpg)
-    no-repeat center/cover;
+.projects {
+  background: #222146
+    url(images/time-displayed-on-top-of-a-building-1824273.jpg) no-repeat
+    center/cover;
 }
 .between {
   min-height: 65vh;
@@ -302,9 +315,9 @@ section {
 }
 
 /* SECTION EXPLORE */
-#explore {
-  background: #222146 url(images/book-coffee-computer-desk-430546.jpg)
-    no-repeat center/cover;
+.explore {
+  background: #222146 url(images/book-coffee-computer-desk-430546.jpg) no-repeat
+    center/cover;
 }
 
 /* SECTION RESEARCH */
@@ -320,7 +333,7 @@ section {
 } */
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   ul.nav-list {
     /* display: none; */
     flex-direction: column;
@@ -355,6 +368,9 @@ section {
   }
   .open .menu-toggle .fa-times {
     display: block;
+    position: fixed;
+    right: 2.7rem;
+    top: 2rem;
   }
 
   .row {
@@ -362,5 +378,8 @@ section {
   }
   .padding-right {
     padding-right: 0;
+  }
+  .section {
+    padding: 4rem 0;
   }
 }

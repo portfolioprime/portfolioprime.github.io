@@ -11,9 +11,14 @@ menuToggler.addEventListener('click', function () {
     body.classList.toggle('open');
 });
 
-let menuClose = selectElement('.nav-link');
-
-// Close menu on .nav-link click
-menuClose.addEventListener('click', function () {
+// Select all nav elements function 
+document.querySelectorAll('.nav a').forEach(el => el.addEventListener('click', function () {
     body.classList.remove('open');
-});
+}));
+
+// let menuClose = selectElement('.nav-link');
+
+// // Close menu on .nav-link click
+// menuClose.addEventListener('click', function () {
+//     body.classList.remove('open');
+// });

@@ -1,7 +1,34 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;700&family=Oswald:wght@400;600;700&family=Roboto+Condensed:wght@700&display=swap"); */
 
-/* FONT FACE LOADER */
+
+/* FONT FACE LOADER woff2 */
 @font-face {
+  font-family: "Amatic SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Amatic SC Regular"), local("AmaticSC-Regular"),
+    url("fonts/Amatic-SC.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Dancing Script"), local("Dancing Script"),
+    url("fonts/Dancing-Script.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Oswald"), local("Oswald"),
+    url("fonts/Oswald400.woff2") format("woff2");
+}
+
+/* FONT FACE LOADER TTF */
+/* @font-face {
   font-family: "Amatic SC";
   font-style: normal;
   font-weight: 400;
@@ -48,7 +75,7 @@
   font-display: swap;
   src: local("Oswald"), local("Oswald"),
     url("fonts/Oswald-Bold.ttf") format("truetype");
-}
+} */
 
 :root {
   --primary-color: #24261f;
@@ -105,27 +132,27 @@ section {
   z-index: 20;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--forth-color);
 }
 h3 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: "Dancing Script", cursive;
   color: var(--sixth-color);
   padding: 20px 0;
 }
 h4 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-family: "Amatic SC", cursive;
   color: var(--forth-color);
 }

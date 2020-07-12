@@ -1,0 +1,665 @@
+/* 
+
+font-family: 'Oswald', sans-serif;
+
+font-family: 'Play', sans-serif; 
+
+font-family: 'Orbitron', sans-serif; 
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.15rem;
+  color: #222;
+}
+
+h1#title {
+  font-family: "Play", sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  background: #8f0808;
+  text-shadow: 0 0 2px #000;
+  padding: 2rem 0;
+}
+#title span {
+  font-size: 2.5rem;
+  font-family: 'Orbitron', sans-serif; 
+  /* text-transform: uppercase; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #000;
+  font-family: "Play", sans-serif;
+}
+
+a {
+  color: #8f0808;
+}
+
+.offset::before {
+  content: "";
+  display: block;
+  height: 95px;
+  margin-top: -95px;
+}
+.offset-1::before {
+  content: "";
+  display: block;
+  height: 60px;
+  margin-top: -60px;
+}
+.offset-2::before {
+  content: "";
+  display: block;
+  height: 90px;
+  margin-top: -20px;
+}
+
+/* Nav */
+nav {
+  position: sticky;
+  top: 0;
+  background: #efefef;
+  z-index: 10;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.nav-item {
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Play', sans-serif; 
+  font-weight: 700;
+  font-size: 0.9rem;
+  position: relative;
+}
+.nav-link::after {
+  transition: 0.2s transform;
+  transform: scaleX(0);
+}
+.nav-link:hover,
+.nav-link:active {
+  color: #000;
+}
+.nav-link:hover::after,
+.nav-link:active::after {
+  content: "";
+  width: 96%;
+  height: 2px;
+  background: #8f0808;
+  bottom: -5px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(1);
+}
+
+/* Main */
+#main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+#img-div {
+  background: #efefef;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+#img-div #image {
+  max-width: 100%;
+  height: auto;
+  max-height: 60vh;
+  margin: auto;
+  display: block;
+  padding-bottom: 1rem;
+}
+
+#img-caption {
+  text-align: center;
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+#img-caption span {
+  font-size: 1.4rem;
+  color: #8f0808;
+}
+
+#tribute-info {
+  padding: 1rem;
+  text-align: justify;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+#about h2,
+#meet-our-heros h2,
+#movies h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+  margin-bottom: 3rem;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 4rem;
+  height: 3px;
+  background: #8f0808;
+  transform: translateX(-50%);
+}
+.float-left {
+  float: left;
+  width: 100%;
+  max-width: 500px;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.float-right {
+  float: right;
+  width: 100%;
+  max-width: 500px;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* About - Stan Lee */
+#stan-lee {
+  background: #efefef66;
+  padding: 0 2rem;
+  min-height: 300px;
+  margin: 7rem 0 3rem;
+  padding-bottom: 3rem;
+}
+#stan-lee img {
+  /* border: 2px solid #8f0808; */
+  /* box-shadow: 0 0 30px #ededed; */
+  padding: 0;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+#stan-lee .born-died {
+  font-size: 0.9rem;
+}
+#stan-lee h3 em {
+  font-size: 1rem;
+  position: relative;
+  top: -1px;
+}
+#stan-lee .excerpt {
+  margin: 0;
+}
+.link-row {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.excerpt {
+  font-size: 0.9rem;
+  color: #333;
+  background: antiquewhite;
+  padding: 20px;
+  margin: 1rem;
+  width: 25%;
+}
+
+/* Meet our Heros */
+.hero-group-img {
+  overflow: hidden;
+  background: #8f0808;
+}
+.hero-group-img .row {
+  display: flex;
+  width: 100%;
+  /* justify-content: center;
+  flex-wrap: wrap; */
+}
+.hero-group-img .img-item {
+  min-width: 1%;
+  transition: 0.2s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-group-img .img-item .content {
+  background: #333333ad;
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 10% 0 2%;
+  transition: opacity 0.4s, transform 0.5s;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0);
+}
+
+.hero-group-img .img-item .content span {
+  font-family: "Play", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  display: inline-block;
+  margin-bottom: 5px;
+  transform: translateY(-50px);
+  transition: transform 0.5s;
+}
+.hero-group-img .img-item .content strong {
+  font-family: "Play", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 2px solid #c00b0b;
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-top: 15px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.hero-group-img .img-item .content p {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: 0.5s;
+  transition-delay: 0.6s;
+}
+
+/* Accordian Hover Effect  */
+.hero-group-img .img-item:hover .content,
+.hero-group-img .img-item:active .content {
+  opacity: 1;
+}
+.hero-group-img .img-item:hover .content span,
+.hero-group-img .img-item:active .content span {
+  transform: translateY(0);
+}
+.hero-group-img .img-item:hover .content p,
+.hero-group-img .img-item:active .content p {
+  transform: translateY(0);
+  opacity: 1;
+}
+.hero-group-img .img-item:hover .content strong,
+.hero-group-img .img-item:active .content strong {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hero-group-img .img-item:hover,
+.hero-group-img .img-item:active {
+  min-width: 238px;
+}
+.hero-group-img .img-item:hover:last-child,
+.hero-group-img .img-item:active:last-child {
+  min-width: 230px;
+}
+.hero-group-img .img-item:hover::after {
+  background: transparent;
+}
+.img-caption {
+  text-align: center;
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+  color: #fff;
+  padding-top: 0.5rem;
+}
+
+/* Hero Info */
+.heros {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #efefef66;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.hero-info {
+  width: 31%;
+  margin: 0;
+  cursor: pointer;
+}
+.hero-info:hover {
+  opacity: 0.9;
+}
+
+.hero-info:last-child {
+  margin: auto;
+}
+
+.hero-info .row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.hero-info .img-item {
+  flex: 1;
+  margin-bottom: -5px;
+}
+
+.hero-info .img-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Hero Info Tabs */
+.tab {
+  cursor: pointer;
+  background: #ffffff;
+}
+.tab-header {
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.tab-header i {
+  color: #8f0808;
+}
+.tabBody {
+  display: none;
+}
+.tab-open .tabBody {
+  display: block;
+  padding: 1rem 2rem;
+  border: 1px solid #ddd;
+}
+.tab-open .tab-header i {
+  transform: rotate(180deg);
+}
+
+.tabBody .links h5 {
+  display: inline-block;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  border-bottom: 2px solid #8f0808;
+  margin-bottom: 0.7rem;
+  color: #353535;
+}
+.tabBody .links p {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: #353535;
+}
+
+/* Movies */
+#movies h2 {
+  margin-bottom: 1rem;
+}
+#movies h3.tip {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.movie-timeline .row {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  justify-content: space-between;
+}
+.movie-timeline .img-card {
+  width: 268px;
+  position: relative;
+}
+.movie-timeline .img-card-inner {
+  overflow: hidden;
+  position: relative;
+}
+.movie-timeline .img-card img {
+  width: 100%;
+  height: 100vh;
+  max-height: 400px;
+  object-fit: cover;
+}
+/* movie img-card overlay on hover */
+/* .movie-timeline .img-card .hover-content {
+  background: #222222ed;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  position: absolute;
+  width: 94%;
+  top: 0;
+  left: 0;
+  bottom: 100px;
+  opacity: 0;
+  transition: opacity .2s;
+  right: 0;
+  padding: 15px 3% 5px;
+} */
+
+/* Alternate */
+.movie-timeline .img-card .hover-content {
+  background: #222222ed;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  position: absolute;
+  /* width: 94%; */
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.4s;
+  padding: 15px 3% 0;
+  /* height: 100%; */
+  height: 95%;
+}
+
+.movie-timeline .img-card:hover .hover-content,
+.movie-timeline .img-card:active .hover-content {
+  opacity: 1;
+}
+.movie-timeline .img-card .hover-content h3 {
+  color: #fff;
+  padding-bottom: 20px;
+}
+.movie-timeline .img-card .hover-content h3 span {
+  color: #fff;
+  font-size: .9rem  ;
+}
+
+.movie-timeline .img-card .hover-content span {
+  color: #df2d2d;
+  text-shadow: 0 0 5px #000;
+}
+.movie-timeline .img-card:hover .hover-content a,
+.movie-timeline .img-card:active .hover-content a {
+  color: #df2d2d;
+  background: #fff;
+  padding: 5px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.movie-timeline .img-card:hover .hover-content a:hover {
+  color: #222;
+}
+.plot {
+  margin-bottom: 20px;
+}
+
+.movie-timeline .img-card .content {
+  text-align: center;
+}
+.movie-timeline .img-card h3.date {
+  border-bottom: 2px solid #8f0808;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+.movie-timeline .img-card h3.title {
+  font-size: 1.1rem;
+  margin: 1rem 0 2rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.movie-timeline .img-card h3.title span {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+/* Footer */
+footer {
+  background: #1a1a1a;
+  padding: 2rem 0;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  border-top: 5px solid #333;
+}
+footer .row {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .row a {
+  margin-bottom: 2rem;
+}
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+}
+hr {
+  color: #222;
+}
+footer p {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #777;
+  text-transform: capitalize;
+}
+footer p a {
+  font-size: 1.2rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+  .hero-info {
+    width: 48%;
+  }
+  .movie-timeline .img-card {
+    width: 32%;
+  }
+  .movie-timeline .img-card img {
+    max-height: 450px;
+}
+  .excerpt {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 835px) {
+  h1#title {
+    font-size: 1.4rem;
+  }
+  #title span {
+    font-size: 2rem;
+  }
+  #main {
+    padding: 0;
+  }
+  #img-div {
+    margin: auto;
+  }
+  #tribute-info {
+    padding: 2rem;
+  }
+  #about h2,
+  #meet-our-heros h2,
+  #movies h2 {
+    font-size: 1.6rem;
+  }
+  .float-left,
+  .float-right {
+    max-width: 100%;
+  }
+  #stan-lee {
+    padding: 1rem;
+  }
+  .excerpt {
+    width: 100%;
+  }
+  .hero-info {
+    width: 100%;
+  }
+  .hero-info .img-item img {
+    height: 300px;
+  }
+  .movie-timeline .img-card {
+    width: 47%;
+    max-width: 300px;
+  }
+  footer .row {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  footer .row a {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .movie-timeline .img-card {
+    width: 350px;
+    margin: auto;
+  }
+  .movie-timeline .img-card img {
+    max-height: 450px;
+  }
+  .movie-timeline .img-card .hover-content {
+    height: 96%;
+    font-size: 1.1rem;
+  }
+  .movie-timeline .img-card .hover-content h3 {
+    margin-top: 2rem;
+  }
+
+  .heros {
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 469px) {
+  #tribute-info {
+    padding: 2rem 1rem;
+  }
+}

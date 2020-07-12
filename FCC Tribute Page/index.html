@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+    crossorigin="anonymous" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Play:wght@400;700&family=Orbitron&display=swap"
+    rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <title>FCC Tribute Page of Marvel's Avengers</title>
+</head>
+
+<body>
+
+  <!-- User Story # #title -->
+  <h1 id="title">A FreeCodeCamp <br><span>Marvel Avengers</span> <br>Tribute Page</h1>
+
+  <nav>
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#about" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#meet-our-heros" class="nav-link">Heros</a>
+      </li>
+      <li class="nav-item">
+        <a href="#movies" class="nav-link">Movies</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- User Story #1 #main -->
+  <section id="main">
+
+    <!-- User Story #3 - div#img-div -->
+    <div id="img-div">
+      <!-- User Story #4 - img#image -->
+      <!-- User Story #9 - center img within parent -->
+      <img id="image" src="images/Marvel-The-Avengers-1600.jpg" alt="">
+      <!-- User Story #5 - #img-caption -->
+      <p id="img-caption"><span>The Avengers (from left to right):</span><br>Scarlet Witch, Quicksilver, Thor,
+        Iron Man, Hulk(top), Captain America, Black Widow and Haykeye.</p>
+    </div>
+
+    <!-- User Story #6 - #tribute-info -->
+    <div id="tribute-info">
+
+      <div id="about" class="offset">
+        <h2>About the Avengers</h2>
+
+        <img class="float-left" src="images/avengers-wallpaper.jpg" alt="">
+        <p>This Page is dedicated to Marvel's Avengers. Here you will learn who they are, <a
+            href="#meet-our-heros">details about the superheros who make up the avengers team</a> and a timeline of the
+          MCU movies to date.<br><br>
+
+          The Avengers are a fictional team of superheroes appearing in American comic books published by Marvel
+          Comics. The team made its debut in The Avengers #1, created by writer-editor <a href="#stan-lee">Stan
+            Lee</a> and artist/co-plotter
+          Jack Kirby.<br><br>
+
+          <strong>The Marvel Cinematic Universe MCU</strong> is a shared universe that is centered on a series of
+          superhero films. Check out our <a href="#movies">up-to-date list of Marvel Avengers films
+            below</a>.<br><br>
+
+          The Avengers team is comprised of extraordinary individuals, either with superpowers or other special
+          characteristics who join together in times of global crisis to protect the Earth from terrestrial or
+          otherworldly threats.<br><br>
+
+          The original team consisted of <em>(from left to right)</em> Nick Fury, Hawkeye, Hulk,
+          Iron Man, Captain America, Thor and Black Widow</a> in <strong>The Avengers</strong> and <strong>Avengers:
+            Age of Ultron</strong>, and shifted when Tony Stark, Thor, Clint Barton, and Bruce Banner/Hulk left the team
+          after the events of <strong>Avengers: Age of Ultron</strong>.<br><br>
+
+          The team puts aside their differences and reasembles for <strong>Avengers: Infinity War</strong>, the 3rd
+          installment in the MCU Avengers series, to take on the all-powerful Thanos, the destroyer of worlds.<br><br>
+
+          For more information about the ever-expanding Avengers team check out
+          <!-- User Story #7 - a#tribute-link -->
+          <a href="https://www.marvel.com/teams-and-groups/avengers" id="tribute-link"
+            target="_blank">Marvel.com</a>.<br><br>
+
+        <div id="stan-lee" class="offset-1">
+          <h3>Stan Lee <em>- Writer, Actor, Legend</em></h3>
+          <span class="born-died"><em>December 28, 1922 to November 12, 2018</em></span><br><br>
+
+          <img class="float-right" src="images/stan-lee.jpeg" alt="">
+          <img-caption>Stan Lee was an American comic book writer, editor, publisher, and producer. He rose
+            through the ranks of a family-run business to become Marvel Comics' primary creative leader for two decades,
+            leading its expansion from a small division of a publishing house to a multimedia corporation that dominated
+            the comics industry.<br><br>
+            He co-created numerous popular fictional characters, including superheroes Spider-Man, the X-Men, Iron Man,
+            Thor, the Hulk, Black Widow, the Fantastic Four, Black Panther, Daredevil, Doctor Strange, Scarlet Witch and
+            Ant-Man. The superheroes he created seemed more meaningful and realistic.<br><br>
+            In doing so, he pioneered a more naturalistic approach to writing superhero comics in the 1960s, and in the
+            1970s he challenged the restrictions of the Comics Code Authority, indirectly leading to changes in its
+            policies.<br><br>
+
+            <span class="excerpt">Above excerpt taken from <a
+                href="https://en.wikipedia.org/wiki/Stan_Lee">Wikepedia</a>.</span>
+          </img-caption>
+        </div>
+
+        </p>
+      </div>
+      <!-- END About -->
+
+      <div id="meet-our-heros" class="offset">
+        <h2>Meet our Heros</h2>
+
+        <!-- Heros Group Image Accordian -->
+        <div class="hero-group-img">
+          <div class="row">
+            <a href="#nick" class="img-item">
+              <img src="images/heros/Nick-Fury.png" alt="">
+
+              <div class="content">
+                <span>Nick Fury</span><br>
+                <strong>Occupation</strong>
+                <p>Director of S.H.I.E.L.D.</p>
+                <P>Founder of the Avengers</P>
+                <strong>Affiliations</strong>
+                <p>CIA / Avengers / Skrulls</p>
+                <strong>Abilities</strong>
+                <p>Skilled military strategist</p>
+                <p>Skilled armed and unarmed combatant</p>
+                <p>Longevity via Infinity Formula</p>
+              </div>
+
+            </a>
+            <a href="#hulk" class="img-item">
+              <img src="images/heros/Hulk.png" alt="">
+
+              <div class="content">
+                <span>Hulk</span><br>
+                <strong>Nicknames</strong>
+                <p>Big Guy</p>
+                <P>The Other Guy</P>
+                <strong>Occupation</strong>
+                <p>Nulear Physicist</p>
+                <p>Biochemist / Physician</p>
+                <strong>Abilities</strong>
+                <p>Invulnerability</p>
+                <p>Superhuman strength, stamina, and durability</p>
+                <p>Regenerative healing factor</p>
+              </div>
+
+            </a>
+            <a href="#thor" class="img-item">
+              <img src="images/heros/Thor.png" alt="">
+
+              <div class="content">
+                <span>Thor</span><br>
+                <strong>Place of Origin</strong>
+                <p>Asgard</p>
+                <strong>Affiliations</strong>
+                <p>Avengers</p>
+                <strong>Abilities</strong>
+                <p>Superhuman strength, speed, durability and longevity</p>
+                <p>Flight</p>
+                <p>Weather Manipulation</p>
+                <p>Dimensional transportation</p>
+              </div>
+
+            </a>
+            <a href="#im" class="img-item">
+              <img src="images/heros/Ironman.png" alt="">
+
+              <div class="content">
+                <span>Iron Man</span><br>
+                <strong>Occupation</strong>
+                <p>CEO of Stark Industries</p>
+                <P>Weapons manufacturer</P>
+                <strong>Spouse</strong>
+                <p>Pepper Pots</p>
+                <strong>Abilities</strong>
+                <p>Genius / Engineer</p>
+                <p>Billionaire Entrepeneur</p>
+                <p>Weaponized robotic suit capable of supersonic flight.</p>
+                <p>Skilled Martial Artist</p>
+              </div>
+
+            </a>
+            <a href="#cap" class="img-item">
+              <img src="images/heros/Cap-America.png" alt="">
+
+              <div class="content">
+                <span>Captain America</span><br>
+                <strong>Affiliation</strong>
+                <p>United States Army</p>
+                <strong>Spouse</strong>
+                <p>Peggy Carter</p>
+                <strong>Abilities</strong>
+                <p>Enhanced Physical abilities</p>
+                <p>Super soldier</p>
+                <p>Slowed ageing</p>
+                <p>Accelerated healing factor</p>
+                <p>Immunity to diseases and toxins</p>
+              </div>
+
+            </a>
+            <a href="#hawk" class="img-item">
+              <img src="images/heros/Hawkeye.png" alt="">
+
+              <div class="content">
+                <span>Hawkeye</span><br>
+                <strong>Place of origin</strong>
+                <p>Waverly, Iowa, USA</p>
+                <strong>Alter ego</strong>
+                <p>Clinton Francis Barton</p>
+                <strong>Abilities</strong>
+                <p>Master archer</p>
+                <p>Expert tactician</p>
+                <p>Hand-to-hand combatant</p>
+                <p>Variety of trick arrows</p>
+              </div>
+
+            </a>
+            <a href="#bw" class="img-item">
+              <img src="images/heros/Black-Widow.png" alt="">
+
+              <div class="content">
+                <span>Black Widow</span><br>
+                <strong>Aliases</strong>
+                <p>Natalia Alianovna Romanova</p>
+                <p>Natasha Romanoff</p>
+                <p>Yelena Belova</p>
+                <strong>Abilities</strong>
+                <p>Secret agent</p>
+                <p>Expert tactician</p>
+                <p>Hand-to-hand combatant</p>
+                <p>Slowed aging</p>
+                <p>Weapons Master</p>
+              </div>
+
+            </a>
+          </div>
+          <div class="img-caption">Hover over the accordian above to learn more about our heros.</div>
+        </div>
+        <!-- END Heros Group Image Accordian -->
+
+
+        <!-- Heros info Cards -->
+        <div class="heros">
+
+          <!-- Nick Fury Info Card -->
+          <div class="hero-info offset-2" id="nick">
+            <div class="row">
+              <div class="img-item">
+                <img src="images/hero-info/nick3.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/nick2.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/nick1.jpeg" alt="">
+              </div>
+            </div>
+            <div class="tab">
+              <div class="tab-header">
+                <h4>Nicolas "Nick" Fury</h4>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="tabBody ">
+                <p>Nicholas "Nick" Joseph Fury, portrayed by Samuel L. Jackson and first appearing in the 2008 film Iron
+                  Man, was a former Colonel who had served with the United States Army and an espionage veteran of the
+                  CIA during the Cold War.</p><br>
+
+                <p>Continuing to serve the world, Fury joined S.H.I.E.L.D., a covert international peacekeeping
+                  organization which operates as humanity's first line of defense against Earth's most dangerous
+                  enemies.</p><br>
+
+                <p>Later promoted to Director of S.H.I.E.L.D., Fury refocused his efforts to organize the Avengers
+                  Initiative.</p><br>
+
+                <div class="links">
+                  <h5>Additional Links</h5>
+                  <p>Learn more about <a href="https://en.wikipedia.org/wiki/Nick_Fury_(Marvel_Cinematic_Universe)"
+                      target="_blank">Nick Fury</a> on Wikipedia.</p>
+                  <p>Learn more about <a href="https://en.wikipedia.org/wiki/Samuel_L._Jackson" target="_blank">Samuel
+                      L. Jackson</a> on Wikipedia.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Hulk Info Card -->
+          <div class="hero-info offset-2" id="hulk">
+            <div class="row">
+              <div class="img-item">
+                <img src="images/hero-info/hulk1.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/hulk2.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/hulk3.jpg" alt="">
+              </div>
+            </div>
+            <div class="tab">
+              <div class="tab-header">
+                <h4>Hulk / Bruce Banner</h4>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="tabBody">
+                <p>Robert Bruce Banner, M.D., Ph.D., is a renowned scientist and a founding member of the Avengers.</p>
+                <br>
+
+                <p>Highly respected for his work in biochemistry, nuclear physics, and gamma radiation, he was
+                  commissioned to recreate the Super Soldier Serum which created Captain America.</p><br>
+
+                <p>After being exposed to heavy doses of gamma radiation, scientist Bruce Banner transforms into the
+                  mean, green rage machine called the Hulk. </p><br>
+
+                <div class="links">
+                  <h5>Additional Links</h5>
+                  <p>Learn more about <a href="https://en.wikipedia.org/wiki/Bruce_Banner_(Marvel_Cinematic_Universe)"
+                      target="_blank">Hulk / Bruce Banner</a> on Wikipedia.</p>
+                  <p>Learn more about <a href="https://en.wikipedia.org/wiki/Mark_Ruffalo" target="_blank">Mark
+                      Ruffalo</a> on Wikipedia.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Thor Info Card -->
+          <div class="hero-info offset-2" id="thor">
+            <div class="row">
+              <div class="img-item">
+                <img src="images/hero-info/thor1.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/thor2.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/thor3.jpeg" alt="">
+              </div>
+            </div>
+            <div class="tab">
+              <div class="tab-header">
+                <h4>Thor Odinson</h4>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="tabBody">
+                <p>Thor Odinson is the former King of New Asgard, a founding member of the Avengers, and the God of
+                  Thunder.</p><br>
+
+                <p>When his irresponsible and impetuous behavior reignited a conflict between Asgard and Jotunheim, he
+                  was denied the right to become king, stripped of his power, and banished by his father Odin to Earth.
+                </p><br>
+
+                <p>After redeeeming himself, he was granted his power once more, and now wields his mighty hammer
+                  Mjölnir to fight evil throughout the Nine Realms and beyond protect his home Asgard and planet Earth
+                  alike.</p><br>
+
+                <div class="links">
+                  <h5>Additional Links</h5>
+                  <p>Learn more about <a href="https://en.wikipedia.org/wiki/Thor_(Marvel_Cinematic_Universe)"
+                      target="_blank">Thor</a> on Wikipedia.</p>
+                  <p>Learn more about <a href="https://en.wikipedia.org/wiki/Chris_Hemsworth" target="_blank">Chris
+                      Hemsworth</a> on Wikipedia.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Iron Man Info Card -->
+          <div class="hero-info offset-2" id="im">
+            <div class="row">
+              <div class="img-item">
+                <img src="images/hero-info/Iron4.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/Iron3.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/Iron2.jpeg" alt="">
+              </div>
+            </div>
+            <div class="tab">
+              <div class="tab-header">
+                <h4>Tony Stark / Ironman</h4>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="tabBody">
+                <p>Anthony Edward "Tony" Stark, brilliantly portrayed by Robert Downey Jr., is a billionaire
+                  industrialist, genius, inventor, playboy and philanthropist, a founding member of the Avengers, and
+                  the former CEO of Stark Industries, a company originally started by his father, Howard Stark.</p><br>
+                <p>Tony Stark's confidence is only matched by his high-flying abilities as the hero called Iron Man, a
+                  suit of armer he wears while protecting the planet.</p><br>
+                <p>When not flying as Iron Man he applies his genius to creating high-tech solutions to global problems,
+                  like clean renewable energy.</p><br>
+
+                <div class="links">
+                  <h5>Additional Links</h5>
+                  <p>Learn more about <a href="https://en.wikipedia.org/wiki/Tony_Stark_(Marvel_Cinematic_Universe)"
+                      target="_blank">Tony Stark / Ironman</a> on Wikipedia.</p>
+                  <p>Learn more about <a href="https://en.wikipedia.org/wiki/Robert_Downey_Jr." target="_blank">Robert
+                      Downey Jr.</a> on Wikipedia.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Cap Am Info Card -->
+          <div class="hero-info offset-2" id="cap">
+            <div class="row">
+              <div class="img-item">
+                <img src="images/hero-info/cap1.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/cap2.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/cap4.jpeg" alt="">
+              </div>
+            </div>
+            <div class="tab">
+              <div class="tab-header">
+                <h4>Captain America / Steve Rogers</h4>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="tabBody">
+                <p>Captain Steven Grant "Steve" Rogers is a World War II veteran, a founding member of the Avengers, and
+                  Earth's first known superhero.</p><br>
+                <p>Rogers had suffered from numerous health problems, and upon America's entry into World War II, was
+                  rejected from military service despite several attempts to enlist.</p><br>
+                <p>Recipient of the Super Soldier Serum he fights for American ideals as one of the world’s mightiest
+                  heroes and the leader of the Avengers.
+                </p><br>
+
+                <div class="links">
+                  <h5>Additional Links</h5>
+                  <p>Learn more about <a href="https://en.wikipedia.org/wiki/Steve_Rogers_(Marvel_Cinematic_Universe)"
+                      target="_blank">Captain America / Steve Rogers</a> on Wikipedia.</p>
+                  <p>Learn more about <a href="https://en.wikipedia.org/wiki/Chris_Evans_(actor)" target="_blank">Chris
+                      Evans</a> on Wikipedia.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Hawkeye Info Card -->
+          <div class="hero-info offset-2" id="hawk">
+            <div class="row">
+              <div class="img-item">
+                <img src="images/hero-info/hawk1.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/hawk2.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/hawk3.jpeg" alt="">
+              </div>
+            </div>
+            <div class="tab">
+              <div class="tab-header">
+                <h4>Hawkeye / Clint Barton</h4>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="tabBody">
+                <p>An expert marksman and fighter, Clint Barton puts his talents to good use by working for S.H.I.E.L.D.
+                  as a special agent.</p><br>
+                <p>The archer known as Hawkeye, played by Jeremy Renner, also boasts a strong moral compass that at
+                  times leads him astray from his direct orders.</p><br>
+                <p>Barton became one of the best agents of S.H.I.E.L.D., responsible for the recruitment of Black Widow,
+                  with whom he developed a strong friendship.</p><br>
+
+                <div class="links">
+                  <h5>Additional Links</h5>
+                  <p>Learn more about <a href="https://en.wikipedia.org/wiki/Clint_Barton_(Marvel_Cinematic_Universe)"
+                      target="_blank">Hawkeye
+                      / Clint Barton</a> on Wikipedia.</p>
+                  <p>Learn more about <a href="https://en.wikipedia.org/wiki/Jeremy_Renner" target="_blank">Jeremy
+                      Renner</a> on Wikipedia.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Black widow Info Card -->
+          <div class="hero-info offset-2" id="bw">
+            <div class="row">
+              <div class="img-item">
+                <img src="images/hero-info/bw2.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/bw1.jpeg" alt="">
+              </div>
+              <div class="img-item">
+                <img src="images/hero-info/bw3.jpeg" alt="">
+              </div>
+            </div>
+            <div class="tab">
+              <div class="tab-header">
+                <h4>Black widow / Natalia "Natasha" Romanova</h4>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="tabBody">
+                <p>Natasha Romanoff is a fictional character portrayed by Scarlett Johansson. She is a deadly spy and an
+                  expert hand-to-hand combatant, trained in the Red Room from childhood.</p><br>
+                <p>Despite super spy Romanoff’s checkered past, she’s become one of S.H.I.E.L.D.’s most deadly
+                  assassins and a frequent member of the Avengers.
+                </p><br>
+                <p>Trusted by some and feared by most, the Black Widow strives to make up for the bad she had done in
+                  the past by helping the world, even if that means getting her hands dirty in the process.</p><br>
+
+                <div class="links">
+                  <h5>Additional Links</h5>
+                  <p>Learn more about <a
+                      href="https://en.wikipedia.org/wiki/Natasha_Romanoff_(Marvel_Cinematic_Universe)"
+                      target="_blank">Natasha Romanoff
+                      / Black Widow</a> on Wikipedia.</p>
+                  <p>Learn more about <a href="https://en.wikipedia.org/wiki/Scarlett_Johansson"
+                      target="_blank">Scarlett Johansson</a> on Wikipedia.</p>
+                  <p>Read about <a href="https://en.wikipedia.org/wiki/Black_Widow_(2020_film)" target="_blank">Black
+                      Widow (2020 film)</a> on Wikipedia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- END Heros info cards -->
+
+        <div class="link-row">
+          <span class="excerpt">Read about the <a href="https://www.marvel.com/teams-and-groups/avengers/">history of
+              the
+              Avengers at Marvel.com</a>.</span>
+          <span class="excerpt">Discover <a href="https://www.marvel.com/characters">more Avengers Team
+              Members</a>.</span>
+          <span class="excerpt">Discover <a href="https://www.marvel.com/movies">the latest marvel movies</a>.</span>
+        </div>
+
+      </div>
+      <!-- END Meet our heros -->
+
+      <div id="movies" class="offset">
+        <h2>MCU Movies Timeline</h2>
+        <h3 class="tip">Hover over / or click the movie covers to view a brief synopsis of the movie.</h3>
+
+        <div class="movie-timeline">
+          <div class="row">
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/iron-man.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Iron Man</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>A billionaire & genius inventor is kidnapped by terrorists who want him to build a devastating
+                      weapon. Instead, he builds an armored suit and uses it to combat crime and terrorism.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Robert Downey Jr., Terrence Howard, Jeff Bridges, Gwyneth Paltrow.</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Iron_Man_2" target="_blank"></a>Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner-->
+
+              <div class="content">
+                <h3 class="date">2008</h3><br>
+                <h3 class="title">Iron Man</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/hulk.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>The Incredible Hulk</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>Scientist Bruce Banner, in hiding from the CIA, desperately seeks a cure for the gamma
+                      radiation
+                      that contaminated his cells and turned him into a raging monster.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Edward Norton, Liv Tyler, William Hurt, Tim Roth</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/The_Incredible_Hulk_(film)" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2008</h3><br>
+                <h3 class="title">The Incredible Hulk</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/iron-man-2.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Iron Man 2</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>
+                      With the world now aware that he is Iron Man, Tony Stark faces pressure from all sides to
+                      share his
+                      technology with the military. He fears his research will fall into the wrong hands.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Robert Downey Jr., Gwyneth Paltrow, Don Cheadle</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Iron_Man_2" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2010</h3>
+                <h3 class="title">Iron Man 2</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/thor.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Thor</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>Odin, king of the Gods, disowns and banishes Thor, his son, to Earth as punishment for starting
+                      a war
+                      . Thor,
+                      stripped of his powers, must swallow his pride and face his greatest challenge yet.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Chris Hemsworth, Natalie Portman, Tom Hiddleston, Anthony Hopkins, Stellan Skarsgård.</p>
+                  </div><br>
+                  <a href="#">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2011</h3>
+                <h3 class="title">Thor</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/cap-am-1.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Captain America:<br><span>The First Avenger</span></h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>It is 1941 and the world is at war. Steve Rogers wants to do his part, but the military rejects
+                      him because of his small stature. Finally, Steve is accepted into an experimental program that
+                      turns him into a supersoldier.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Chris Evans, Sebastian Stan, Hayley Atwell</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Captain_America:_The_First_Avenger" target="_blank">Read
+                    More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2011</h3>
+                <h3 class="title">Captain America:<br><span>The First Avenger</span></h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/avengers-1.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>The Avengers</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>When Loki, the God of Mischief, poses a threat to Earth, Nick Fury, the director of SHIELD,
+                      launches the Avengers Initiative. He assembles a squad of superheroes who must learn to work
+                      together together if they are to save the planet.
+                    </p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Robert Downey Jr., Terrence Howard, Jeff Bridges, Gwyneth Paltrow.</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/The_Avengers_(2012_film)" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2012</h3>
+                <h3 class="title">The Avengers</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/iron-man-3.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Iron Man 3</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>The mysterious Mandarin leads a terror campaign on the USA and Tony Stark, wrestling with the his
+                      demons after of the events of The Avengers, embarks on a journey of self-discovery as he attempts
+                      to take down this maniacal terrorist.
+                    </p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Robert Downey Jr., Gwyneth Paltrow, Don Cheadle, Guy Pearce, Rebecca Hall.</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Iron_Man_3" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2013</h3>
+                <h3 class="title">Iron Man 3</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/thor-2.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Thor: The Dark World</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>Malekith, king of the Dark Elves, an ancient evil race, returns to Asgard to retrieve a dangerous
+                      weapon and destroy the Nine Realms. Thor, defeated in Asgard, must journey to Earth to stop
+                      Malekith.
+                    </p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Robert Downey Jr., Terrence Howard, Jeff Bridges, Gwyneth Paltrow.</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Thor%3A_The_Dark_World" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2013</h3>
+                <h3 class="title">Thor:<br><span>The Dark World</span></h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/cap-am-2.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Captain America:<br><span>The Winter Soldier</span></h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>As Steve Rogers adapts to the complexities of a contemporary world, he joins Natasha Romanoff and
+                      Sam Wilson in his mission to uncover the secret behind a deadly, mysterious assassin.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p> Chris Evans, Scarlett Johansson, Sebastian Stan, Anthony Mackie, Robert Redford, Samuel L.
+                      Jackson.</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Captain_America:_The_Winter_Soldier" target="_blank">Read
+                    More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2014</h3>
+                <h3 class="title">Captain America:<br><span>The Winter Soldier</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+
+              <div class="img-card-inner">
+                <img src="images/movies/gog.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Guardians of the Galaxy</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>In 1988, a young Peter Quill is abducted from Earth by a group of alien smugglers. 26 years
+                      later, Quill steals a mysterious orb, a source of incredible power. He and a group of criminals
+                      team up to protect the orb from falling into the wrong hands.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Chris Pratt, Zoe Saldana, Dave Bautista, Bradley Cooper, Michael Rooker, Vin Diesel</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_(film)" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2014</h3>
+                <h3 class="title">Gardians of the Galaxy</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/avengers-2.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Avengers:<br><span>Age of Ultron</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>Stark and Banner discover an A.I. within the scepter's gem, and decide to use it to complete
+                      Stark's "Ultron" global defense program. The sentient Ultron, believes he must eradicate humanity
+                      to save Earth.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Robert Downey Jr., Terrence Howard, Jeff Bridges, Gwyneth Paltrow.</p>
+                  </div><br>
+                  <a href="#">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner-->
+
+              <div class="content">
+                <h3 class="date">2015</h3>
+                <h3 class="title">Avengers:<br><span>Age of Ultron</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/ant-man.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Ant Man</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>Scott Lang, a master thief, breaks into a house finds an old motorcycle suit. After trying the
+                      suit on, Lang accidentally shrinks himself to the size of an insect, eventually leading Scott to
+                      become a most unlikely hero, Ant man. </p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Paul Rudd, Michael Douglas, Evangeline Lilly, and Corey Stoll.</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Ant-Man_(film)" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+
+              <div class="content">
+                <h3 class="date">2015</h3>
+                <h3 class="title">Ant Man</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/cap-am-3.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Captain America:<br><span>Civil War</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>A team divided: After Ultron destroys Sokovia, Stark supports oversight, while Rogers believes
+                      the team needs to be free from political games. The winter soldier, a deadly assassin, goes on a
+                      killing spree.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p> Robert Downey, Jr., Chris Evans, Sebastian Stan, Jeremy Renner, Anthony Mackie.</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Captain_America:_Civil_War" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2016</h3>
+                <h3 class="title">Captain America:<br><span>Civil War</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/dr-strange.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Doctor Strange</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>An arrogant neurosurgeon who, after a car crash seeks healing, travels to a Tibetan monastery and
+                      discovers the hidden world of magic and alternate dimensions. He must learn to harness the power
+                      within himself.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Cumberbatch, Derrickson, Swinton, McAdams, Ejiofor, Mikkelsen, and Wong.</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Doctor_Strange_(2016_film)" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2016</h3>
+                <h3 class="title">Doctor Strange</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/gog-2.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Gardians of the Galaxy:<br><span> Vol.2</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>The Guardians are hired by a powerful alien race, the Sovereign, to protect their precious
+                      batteries from invaders. When Rocket steals said batteries, the Sovereign dispatch their armada
+                      after them.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p> Chris Pratt, Zoe Saldana, Dave Bautista, Bradley Cooper, Michael Rooker...
+                    </p>
+                  </div><br>
+                  <a href="#">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2017</h3>
+                <h3 class="title">Gardians of the Galaxy:<br><span> Vol.2</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/spider-man.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Spiderman:<br><span>Homecoming</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>Peter Parker, a smart 15-year-old student, gains spider-like abilities after being bitten by a
+                      spider. He fights crime while juggling the pressures of adolescence, high-school and falling in
+                      love.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p> Tom Holland, Laura Harrier, Tony Revolori, Jacob Batalon, Zendaya.
+                    </p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Spider-Man:_Homecoming" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2017</h3>
+                <h3 class="title">Spiderman:<br><span>Homecoming</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/thor-3.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Thor:<br><span>Ragnarok</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>Thor, imprisoned and without his hammer, finds himself in a race against time to return to Asgard
+                      to stop Ragnarok — the end of Asgardian civilization — at the hands of the all-powerful Hela.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Chris Hemsworth, Tom Hiddleston, Cate Blanchett, Mark Ruffalo, Anthony Hopkins.</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Thor:_Ragnarok" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2017</h3>
+                <h3 class="title">Thor:<br><span>Ragnarok</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/black-panther.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Black Panther</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>After T'Chaka's death, his son T'Challa returns to Wakanda, a technologically advanced African
+                      nation, to assume the throne and the role of the Black Panther, the tribe's superhuman protector.
+                    </p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Lupita Nyong'o, Michael B. Jordan, Danai Gurira, and Chadwick Boseman.</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Black_Panther_(film)" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+
+              <div class="content">
+                <h3 class="date">2018</h3>
+                <h3 class="title">Black Panther</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/avengers-3.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Avengers:<br><span>Infinty War</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>A new danger has emerged from the cosmos: Thanos. His goal is to collect all 6 Infinity Stones,
+                      and use them to erase half of all life in the universe. The fate of all existence is at stake.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Robert Downey Jr, Chris Hemsworth, Mark Ruffalo, Chris Evans, Scarlett Johansson.</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Avengers:_Infinity_War" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+
+              <div class="content">
+                <h3 class="date">2018</h3>
+                <h3 class="title">Avengers:<br><span>Infinty War</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/ant-man-2.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Ant Man<br><span>and the Wasp</span></h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>In the aftermath of Captain America: Civil War, Scott Lang grapples with the consequences of his
+                      choices as both a superhero and a father. Scott must once again put on the suit and learn to fight
+                      alongside The Wasp as the team works to uncover secrets from their past.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Paul Rudd, Evangeline Lilly, Michael Peña</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Ant-Man_and_the_Wasp" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+
+              <div class="content">
+                <h3 class="date">2018</h3>
+                <h3 class="title">Ant-Man<br><span>and the Wasp</span></h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/cap-marvel.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Captain Marvel</h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>Carol Danvers, trained as a member of the elite Starforce Military, crashes on Earth while under
+                      attack by the Skrulls, begins to discover there's more to her past. With help from S.H.I.E.L.D.
+                      agent Nick Fury, they set out to unravel the truth.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Brie Larson, Samuel L. Jackson, Jude Law, Annette Bening, Clark Gregg.</p>
+                  </div><br>
+                  <a href="https://en.wikipedia.org/wiki/Captain_Marvel_(film)" target="_blank">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2019</h3>
+                <h3 class="title">Captain Marvel</h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/avengers-4.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Avengers:<br><span>Endgame</span></h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>After the devastating events of Infinity War, the universe is in ruins. The remaining Avengers
+                      assemble once more in order to reverse Thanos' actions and restore balance.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Robert Downey Jr, Chris Evans, Mark Ruffalo, Chris Hemsworth.</p>
+                  </div><br>
+                  <a href="">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2019</h3>
+                <h3 class="title">Avengers:<br><span>Endgame</span></h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+
+            <!-- START Movie Img Card -->
+            <div class="img-card">
+              <div class="img-card-inner">
+
+                <img src="images/movies/spider-man-2.jpg" alt="">
+                <!-- Movie info Overlay on Hover -->
+                <div class="hover-content">
+                  <h3>Spider-Man<br><span>Far from Home</span></h3>
+                  <div class="plot">
+                    <span>PLOT</span>
+                    <p>Peter Parker takes a class trip to Europe. However, his vacation is takes a turn when he agrees
+                      to help Nick Fury stop elemental creature attacks, creating havoc across the continent.</p>
+                  </div>
+                  <div class="cast">
+                    <span>CAST</span>
+                    <p>Robert Downey Jr., Terrence Howard, Jeff Bridges,
+                      Gwyneth Paltrow.</p>
+                  </div><br>
+                  <a href="#">Read More</a>
+
+                  <!-- END Movie info Overlay on Hover -->
+                </div>
+              </div>
+              <!-- END Movie Img Card Inner -->
+
+              <div class="content">
+                <h3 class="date">2019</h3>
+                <h3 class="title">Spider-Man<br><span>Far from Home</span>
+                </h3>
+              </div>
+            </div>
+            <!-- END Movie Img Card -->
+
+          </div>
+          <!-- END Movies-timeline .row -->
+
+        </div>
+        <!-- END Movies-timeline -->
+
+      </div>
+      <!-- END Movies -->
+
+    </div>
+    <!-- END div#Tribute-info -->
+
+  </section>
+  <!-- END #main -->
+
+  <footer>
+    <div class="row">
+      <a href="https://www.marvel.com/teams-and-groups/avengers" target="_blank">Avengers</a>
+      <a href="https://www.marvel.com/teams-and-groups" target="_blank">More Marvel Characters</a>
+      <a href="https://www.marvel.com/comics" target="_blank">Comics</a>
+      <a href="https://www.marvel.com/movies" target="_blank">Upcoming Movies</a>
+      <a href="https://en.wikipedia.org/wiki/Avenger" target="_blank">Avengers Wiki</a>
+    </div>
+    <hr>
+    <p>created by <a href="http://portfolioprime.github.io">Wayne Hendricks</a></p>
+  </footer>
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
+
+</html>

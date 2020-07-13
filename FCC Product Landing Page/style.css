@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Play", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: darkslategray;
+  font-weight: 700;
+}
+
+#header {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 0 20px;
+  box-shadow: 0 0 10px #555;
+  z-index: 50;
+}
+/* #nav-bar {
+} */
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+#header-img {
+  width: 4rem;
+}
+.nav-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+.nav-item {
+  padding: 20px;
+  text-transform: uppercase;
+}
+.nav-link {
+  font-family: "Play", sans-serif;
+}
+
+#showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 110vh;
+  /* margin: auto; */
+  background: url(images/muscle-building03.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 4rem;
+  padding: 20px;
+}
+#showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000aa;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 4rem;
+}
+.video-container #video {
+  width: 100%;
+  max-width: 800px;
+  /* height: 100%; */
+  margin: auto;
+  display: block;
+  z-index: 10;
+  position: relative;
+}
+.content {
+  text-align: center;
+  margin-top: 1rem;
+  z-index: 10;
+  color: #fff;
+}
+.btn {
+  font-family: "Play", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  display: inline-block;
+  padding: 12px 25px;
+  background: cadetblue;
+  color: #111;
+  margin: 35px 5px 5px 5px;
+  min-width: 150px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #7c0404;
+  color: #fff;
+}
+
+#newsletter {
+  width: 100%;
+  background: #efefef;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: -3rem auto 3rem;
+  background: #fff;
+  z-index: 30;
+  position: relative;
+  padding: 40px;
+  display: flex;
+}
+#newsletter .container > div {
+  flex: 1;
+  margin: 1rem;
+}
+
+#newsletter .container img {
+  width: 100%;
+}
+.newsletter {
+  display: flex;
+  background: #ddd;
+  padding: 20px;
+}
+
+#form {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+label {
+  padding-bottom: 10px;
+}
+#form input {
+  padding: 10px;
+  margin-top: 1rem;
+  border: none;
+}
+#submit {
+  background: #b10606;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+#submit:hover {
+  background: #7c0404;
+}
+
+#trainers {
+  background: url(images/01sports-training.jpg) no-repeat fixed;
+  background-size: cover;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+#trainers::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000aa;
+  }
+  
+#trainers h2 {
+    z-index: 40;
+    position: relative;
+    padding-top: 4rem;
+}
+#trainers .container {
+  margin-bottom: 0;
+}
+
+.trainer-cards {
+  min-height: 60vh;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.card {
+    width: 31%;
+    border: 1px solid #cbdbdb;
+    box-shadow: 0 0 10px #ddd;
+}
+.card img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    padding: 20px 20px 0 20px;
+}
+.card-content h3, .card-content p{
+    padding: 20px;
+    border-bottom:1px solid #e4eaea;
+}
+.card-content {
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  #newsletter .container > div {
+    flex: 1;
+    margin: 0.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #nav-bar {
+    display: none;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .trainer-cards {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+  input {
+    width: 100%;
+  }
+  #submit {
+    width: 100%;
+    margin: 0;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  .btn-showcase {
+    margin: 5px 5px 5px 5px;
+  }
+  
+}

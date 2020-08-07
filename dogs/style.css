@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro:wght@400;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro:wght@400;900&display=swap");
 
 @font-face {
   font-family: "Open Sans Light";
@@ -185,9 +185,9 @@ nav {
   text-shadow: 0 0 10px #000;
 }
 #showcase h3 {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
 }
 #showcase .btn {
   /* box-shadow: 0 0 10px #222; */
@@ -236,6 +236,77 @@ nav {
   z-index: 10;
 }
 
+/* BACK TO PORTFOLIO BUTTON */
+.back-to-portfolio {
+  position: fixed;
+  left: 0;
+  top: 45%;
+  background: #fff;
+  border-left: none;
+  border-bottom-right-radius: 0.6rem;
+  padding: 0px 40px 5px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+  z-index: 2000;
+  font-size: 0.9rem;
+  line-height: 2;
+  box-shadow: 0 0 5px #000;
+}
+.go-back .back-to-portfolio {
+  transform: translateX(0);
+}
+.back-to-portfolio h4 {
+  color: #806532;
+  padding: 5px 2px 5px 0;
+  /* font-size: 1.1rem; */
+}
+.back-to-portfolio h4 a {
+  color: #806532;
+}
+.back-to-portfolio h4 a i {
+  position: relative;
+  top: 5px;
+}
+.back-to-portfolio h4 a:hover {
+  color: #403229;
+}
+.back-to-portfolio h4.right {
+  position: relative;
+  right: -41px;
+}
+.back-to-portfolio .after {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 5px 15px 5px 15px;
+  /* font-size: 1.4rem; */
+  position: absolute;
+  top: 0px;
+  right: -17.3%;
+  background: #806532;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  border-left-width: 1px;
+  box-shadow: 2px 0 5px #000;
+}
+
+.back-to-portfolio .after span {
+  display: block;
+  animation: 1.8s pulse infinite ease-in;
+}
+
+.go-back .overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0f0f0fcf;
+  z-index: 1500;
+}
+
 /* ABOUT SECTION */
 #about {
   padding: 40px 0;
@@ -277,6 +348,11 @@ nav {
   padding: 20px;
 }
 
+.img-border {
+  border: 20px solid #806532;
+  padding: 3px !important;
+}
+
 /* BREEDS SECTION */
 #breeds {
   padding: 40px 0;
@@ -300,12 +376,25 @@ nav {
 .col-4 .img-item {
   width: 100%;
   height: 300px;
+  overflow: hidden;
 }
+
+.col-4 .img-item:hover img {
+  transform: scale(1.1);
+  filter: brightness(80%);
+}
+
 .img-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.8s;
 }
+
+.img-item img:hover {
+  filter: brightness(80%);
+}
+
 .col-4 .content {
   padding: 20px;
 }
@@ -320,8 +409,8 @@ nav {
 #adopt {
   padding: 12rem 20px;
   position: relative;
-  background: var(--primary-color) url(images/dogs-wide16-lg.jpg) no-repeat center
-    center/cover;
+  background: var(--primary-color) url(images/dogs-wide16-lg.jpg) no-repeat
+    center center/cover;
 }
 #adopt::after {
   content: "";

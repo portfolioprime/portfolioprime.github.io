@@ -214,6 +214,8 @@ a.nav-link:hover {
 #showcase h1 {
   font-size: 4rem;
   margin-bottom: 0;
+  color: var(--goldenrod);
+  text-shadow: 0 0 20px var(--dark-brown);
 }
 
 .container-img:after {
@@ -251,6 +253,80 @@ a.nav-link:hover {
   background: #efefef;
   color: #222;
 }
+
+/* BACK TO PORTFOLIO BUTTON */
+.back-to-portfolio {
+  position: fixed;
+  left: 0;
+  top: 45%;
+  background: #fff;
+  border-left: none;
+  border-bottom-right-radius: 0.6rem;
+  padding: 0px 40px 5px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+  z-index: 2000;
+  font-family: "Cormorant Gamorand", serif;
+  font-size: 0.9rem;
+  line-height: 2;
+  box-shadow: 0 0 5px #000;
+}
+.go-back .back-to-portfolio {
+  transform: translateX(0);
+}
+.back-to-portfolio h4 {
+  color: #46301a;
+  padding: 5px 2px 5px 0;
+  /* font-size: 1.1rem; */
+}
+.back-to-portfolio h4 a {
+  color: #46301a;;
+}
+.back-to-portfolio h4 a i {
+  position: relative;
+  top: 5px;
+}
+.back-to-portfolio h4 a:hover {
+  color: #633f1c;
+}
+.back-to-portfolio h4.right {
+  position: relative;
+  right: -41px;
+}
+.back-to-portfolio .after {
+  font-family: "Russo One";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 5px 15px 5px 15px;
+  /* font-size: 1.4rem; */
+  position: absolute;
+  top: 0px;
+  right: -15.3%;
+  background: goldenrod;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  border-left-width: 1px;
+  box-shadow: 2px 0 5px #000;
+}
+
+.back-to-portfolio .after span {
+  display: block;
+  animation: 1.8s pulse infinite ease-in;
+}
+
+.go-back .overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0f0f0fcf;
+  z-index: 1500;
+}
+
 
 /* ABOUT SECTION */
 #about {

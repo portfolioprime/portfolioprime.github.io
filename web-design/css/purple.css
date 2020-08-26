@@ -1,0 +1,194 @@
+body {
+  background: #64467b;
+}
+
+header {
+  filter: hue-rotate(0deg);
+  background: #64467b;
+}
+.menu-right a,
+.menu-left a {
+  border: 1px solid #fff;
+}
+header a {
+  color: #fff;
+}
+
+.logo a {
+  filter: none;
+  color: #64467b;
+}
+
+#sideNav {
+  background: #b984f0;
+  box-shadow: 0 0 25px #222;
+}
+nav ul li a {
+  color: #fff;
+}
+#menuBtn {
+  width: 40px;
+  filter: hue-rotate(288deg);/* purple */
+}
+
+section.hero #left-intro {
+  color: #d5d5d5;
+}
+section.hero #left-intro span {
+  color: #fff;
+}
+section.hero #right-intro h3 {
+  color: #d5d5d5;
+}
+section.hero #right-intro {
+  color: #fff;
+}
+
+section.hero::after {
+  background: #513368;
+  z-index: 10000;
+}
+
+#bg {
+  filter: none;
+}
+
+#mountain-left,
+#mountain-right {
+  display: none;
+}
+
+section.intro {
+  background-image: linear-gradient(#362548, #533368, #704986);
+  background: #b8a3c2;
+}
+h3.sec_header {
+  color: #fff;
+  color: #513368;
+}
+section.intro p {
+  color: #513266;
+}
+
+section.services {
+  background: #b8a3c2;
+  background: #fff;
+}
+
+h3.sec_header.color-2 {
+  color: #593d6d;
+}
+.color-2-gradient {
+  background-image: linear-gradient(to top, #362548, #533368, #704986);
+  background-clip: text;
+  color: transparent;
+}
+.color-3 {
+  background: #b8a3c2;
+}
+.col-left h3.color-white {
+  color: #fff;
+}
+
+section.services .content h4 {
+  font-size: 30px;
+  color: #e53866;
+}
+
+section.services .content p {
+  color: #513266;
+}
+
+.col img, .col-left img, .col-right img {
+  filter: hue-rotate(-298deg) grayscale(0%);
+}
+
+.col-left h3,
+.col-right h3 {
+  color: #5f4179;
+}
+.col-left p {
+  color: #513266;
+}
+.col-right p {
+  color: #513266;
+}
+.features h3.sec_header {
+  background: #5f4179;
+  color: #f5f5f5;
+}
+
+.recent-work {
+  background: #b8a3c2;
+}
+.recent-work h3.sec_header {
+  background-image: linear-gradient(to top, #362548, #533368, #704986);
+  background-clip: text;
+  color: transparent;
+}
+
+#demo-flat .flipster__button {
+  padding: 10px;
+  opacity: 1;
+  margin: -1em 0em;
+  background: #64467b;
+  box-shadow: 0 0 10px #aaa;
+}
+
+#demo-flat .flipster__item__content {
+  background-image: linear-gradient(#362548, #533368, #704986);
+}
+
+#demo-flat #flat .content a {
+  color: #ffffff;
+}
+#demo-flat #flat .content a:hover {
+  color: #d5d5d5;
+}
+
+.recent-work h2 {
+  color: #e53866;
+}
+.recent-work p.sub-heading {
+  color: #513266;
+}
+.recent-work .button {
+  background-color: #e63f64;
+  color: #fff;
+  background: linear-gradient(to right, #64467b, #c118ff 100%);
+}
+
+.recent-work .button:hover {
+  background-color: #dc7eff;
+  box-shadow: 4px 5px 30px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #c118ff, #64467b 100%);
+}
+
+#myBtn {
+  background-color: #64467b; /* Set a background color */
+  color: #fff;
+}
+
+#myBtn:hover {
+  background-color: #fff; /* Add a dark-grey background on hover */
+  color: #333;
+}
+
+#contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #ae7cb5;
+  background: #eab2e4;
+}
+#contact h1 {
+  color:#64467b;
+}
+form input, form textarea {
+  border: 2px solid #b8a3c2;
+}
+.btn-box .common-btn {
+  background:#64467b;
+}
+.contact-right-col  img {
+  filter: hue-rotate(-298deg) grayscale(0%)
+}

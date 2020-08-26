@@ -1,0 +1,194 @@
+body {
+  background: #d4164d;
+}
+
+header {
+  filter: hue-rotate(0deg);
+  background: #d4164d;
+}
+
+.menu-right a,
+.menu-left a {
+  border: 1px solid #fff;
+}
+header a {
+  color: #fff;
+}
+.logo a {
+  filter: none;
+  color: #d4164d;
+}
+
+#sideNav {
+  background: #f67c92;
+  box-shadow: 0 0 25px #222;
+}
+nav ul li a {
+  color: #fff;
+}
+#menuBtn {
+  width: 40px;
+  filter:  hue-rotate(0deg);/* pink */
+}
+
+section.hero #left-intro {
+  color: #d5d5d5;
+}
+section.hero #left-intro span {
+  color: #fff;
+}
+section.hero #right-intro h3 {
+  color: #d5d5d5;
+}
+section.hero #right-intro {
+  color: #fff;
+}
+section.hero::after {
+  background: #e5295b;
+  z-index: 10000;
+}
+
+#bg {
+  filter: none;
+}
+
+#mountain-left,
+#mountain-right {
+  display: none;
+}
+
+section.intro {
+  background-image: linear-gradient(#ffa6bd, #ffcad8);
+}
+
+.col img, .col-left img, .col-right img {
+  filter: hue-rotate(-210deg) grayscale(0%);
+}
+
+section.services {
+  background: #fff;
+}
+
+
+h3.sec_header.color-2 {
+  color: #d4164d;
+}
+.color-3 {
+  background: linear-gradient(#ffa6bd, #ffcad8);
+}
+.col-left h3.color-white {
+  color: #e53866;
+}
+
+h3.sec_header {
+  color: #d4164d;
+}
+
+section.services .content h4 {
+  font-size: 30px;
+  color: #e53866;
+}
+
+section.services .content p {
+  color: #513266;
+}
+
+.col-left h3,
+.col-right h3 {
+  color: #e53866;
+}
+.col-left p {
+  color: #513266;
+}
+.col-right p {
+  color: #513266;
+}
+
+.features h3.sec_header {
+  background: #d4164d;
+  color: #f5f5f5;
+}
+
+.recent-work {
+  background: #f5f5f5;
+}
+.recent-work h3.sec_header {
+  background: linear-gradient(#d4164d, #d4164d);
+  background-clip: text;
+  color: transparent;
+}
+
+#demo-flat .flipster__button {
+  padding: 10px;
+  opacity: 1;
+  margin: -1em 0em;
+  background: #e53866;
+  box-shadow: 0 0 10px #333;
+}
+
+#demo-flat .flipster__item__content {
+  background: linear-gradient(#d4164d, #d4164d);
+}
+
+#demo-flat #flat .content a {
+  color: #ffffff;
+}
+#demo-flat #flat .content a:hover {
+  color: #d5d5d5;
+}
+
+.recent-work h2 {
+  color: #e53866;
+}
+.recent-work p.sub-heading {
+  color: #513266;
+}
+.recent-work .columns .card {
+  margin-bottom: 100px;
+  padding: 0 20px 10px 20px;
+  background: #6f4885;
+  background: #593d6d;
+  background: #322244;
+  background: #503266;
+  background-image: linear-gradient(to top, #362548, #533368, #704986);
+}
+
+.recent-work .button {
+  background-color: #e63f64;
+  color: #fff;
+  background: linear-gradient(to right, #e63f64, #c118ff 100%);
+}
+
+.recent-work .button:hover {
+  background-color: #dc7eff;
+  box-shadow: 4px 5px 30px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #c118ff, #e63f64 100%);
+}
+
+#myBtn {
+  background-color: #d4164d; /* Set a background color */
+  color: #fff;
+}
+
+#myBtn:hover {
+  background-color: #fff; /* Add a dark-grey background on hover */
+  color: #333;
+}
+
+#contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #eab2c3;
+}
+#contact h1 {
+  color:#d4164d;
+}
+form input, form textarea {
+  border: 2px solid #fba4b3;
+}
+.btn-box .common-btn {
+  background:#d4164d;
+}
+.contact-right-col  img {
+  filter: hue-rotate(-210deg) grayscale(0%);
+}

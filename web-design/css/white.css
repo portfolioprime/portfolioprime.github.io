@@ -1,0 +1,173 @@
+body {
+  background: #fff;
+}
+
+header {
+  margin-top: 30px;
+  margin-top: 75px;
+  filter: hue-rotate(199deg) grayscale(100%);
+  background: #fff;
+  padding: 0 9%;
+}
+
+.menu-right a,
+.menu-left a {
+  border: 1px solid #666;
+}
+header a {
+  color: #666;
+}
+.logo a {
+  filter: grayscale(100%);
+}
+section.hero {
+  height: 95vh;
+}
+section.hero::after {
+  background: #77e0e0;
+}
+
+#bg {
+  filter: grayscale(100%) invert(100%);
+  filter: grayscale(80%) brightness(50);
+}
+
+#mountain-left,
+#mountain-right {
+  display: none;
+}
+
+#sun {
+  top: 0 !important;
+}
+
+#wayne {
+  left: 0% !important;
+}
+
+section.hero .header-intro-content {
+  padding: 9%;
+}
+
+section.hero #left-intro {
+  color: #999;
+}
+
+section.hero #left-intro span {
+  color: #333;
+}
+
+section.hero #right-intro {
+  color: #333;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+section.hero #right-intro h3 {
+  color: #999;
+  text-transform: capitalize;
+}
+
+section.hero #right-intro span {
+  display: none;
+}
+
+section.intro {
+  background: #efefef;
+  background: #e8f5f3;
+}
+
+h3.sec_header {
+  color: #333;
+}
+
+h3.sec_header.color-2 {
+  color: #888;
+}
+
+section.intro p {
+  color: #333;
+}
+
+.col img,
+.col-left img,
+.col-right img {
+  filter: grayscale(70%);
+}
+
+section.services {
+  background: #fff;
+}
+section.services .content h4 {
+  color: #666;
+}
+section.services .content p {
+  color: #333;
+}
+
+.features h3.sec_header {
+  background: #e5f0ef;
+  background: #e8f5f3;
+  color: #333;
+}
+
+.col-left h3,
+.col-right h3 {
+  font-size: 30px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.col-left h3.color-white {
+  color: #666;
+}
+.col-left p, .col-right p {
+  color: #333;
+}
+.color-3 {
+  background: #efefef;
+  background: #e8f5f3;
+}
+
+.recent-work {
+  background: #e5f0ef;
+  background: #e8f5f3;
+}
+
+.recent-work h3.sec_header {
+  color: #333;
+}
+
+.recent-work .button {
+  background: #555;
+  color: #fff;
+  background: linear-gradient(to right, #777, #333 100%);
+}
+.recent-work .button:hover {
+  background: linear-gradient(to right, #333, #777 100%);
+}
+
+#demo-flat .flipster__button {
+  background: #fff;
+  box-shadow: 0 0 10px #333;
+}
+#demo-flat .flipster__button:hover,
+.flipster__button:focus {
+  opacity: 0.8;
+  color: #555;
+}
+
+#demo-flat .flipster__item__content {
+  background: #fff;
+}
+
+#demo-flat #flat .content a {
+  color: #333;
+}
+#demo-flat #flat .content a:hover {
+  color: #555;
+}
+
+#myBtn {
+  box-shadow: 0 0 1px #333;
+  background: #333;
+}
+

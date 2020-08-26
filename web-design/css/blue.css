@@ -1,0 +1,182 @@
+body {
+  background: #2c6089;
+}
+
+header {
+  filter: hue-rotate(0deg);
+  background: #2c6089;
+}
+.menu-right a,
+.menu-left a {
+  border: 1px solid #fff;
+}
+header a {
+  color: #fff;
+}
+
+.logo a {
+  filter: none;
+  color: #2c6089;
+}
+
+#sideNav {
+  background: #59a3dc;
+  box-shadow: 0 0 25px #222;
+}
+nav ul li a {
+  color: #fff;
+}
+#menuBtn {
+  width: 40px;
+  filter: hue-rotate(222deg); /* blue */
+}
+
+section.hero #left-intro {
+  color: #d5d5d5;
+}
+section.hero #left-intro span {
+  color: #fff;
+}
+section.hero #right-intro h3 {
+  color: #d5d5d5;
+}
+section.hero #right-intro {
+  color: #fff;
+}
+
+section.hero::after {
+  background: #2c6089;
+  z-index: 10000;
+}
+
+#bg {
+  filter: none;
+}
+
+#mountain-left,
+#mountain-right {
+  display: none;
+}
+
+section.intro {
+  background: #507c9f;
+}
+h3.sec_header {
+  color: #fff;
+}
+section.intro p {
+  color: #e5e5e5;
+}
+
+section.services {
+  background: #efefef;
+}
+
+h3.sec_header.color-2 {
+  color: #2c6089;
+}
+.color-3 {
+  background: #507c9f;
+}
+
+section.services .content h4 {
+  font-size: 30px;
+  color: #2c6089;
+}
+
+section.services .content p {
+  color: #333;
+}
+
+.col img,
+.col-left img,
+.col-right img {
+  filter: grayscale(70%);
+}
+
+.col-left h3,
+.col-right h3 {
+  color: #2c6089;
+}
+
+.col-left h3.color-white {
+  color: #fff;
+}
+
+.col-left p {
+  color: #e5e5e5;
+}
+.col-right p {
+  color: #333;
+}
+.features h3.sec_header {
+  background: #6facdd;
+  color: #f5f5f5;
+}
+
+.recent-work {
+  background: #6facdd;
+}
+
+.recent-work h3.sec_header {
+  color: #fff;
+}
+
+#demo-flat .flipster__button {
+  padding: 10px;
+  opacity: 1;
+  margin: -1em 0em;
+  background: #2c6089;
+  box-shadow: 0 0 10px #333;
+}
+
+#demo-flat .flipster__item__content {
+  background: #fff;
+}
+
+#demo-flat #flat .content a {
+  color: #2c6089;
+}
+#demo-flat #flat .content a:hover {
+  color: #507c9f;
+}
+
+.recent-work .button {
+  background-color: #43a8a8;
+  color: #fff;
+  background: linear-gradient(to right, #2c6089, #507c9f 100%);
+}
+
+.recent-work .button:hover {
+  background-color: #005757;
+  box-shadow: 4px 5px 30px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #507c9f, #2c6089 100%);
+}
+
+#myBtn {
+  background-color: #2c6089; /* Set a background color */
+  color: #fff;
+}
+
+#myBtn:hover {
+  background-color: #fff; /* Add a dark-grey background on hover */
+  color: #333;
+}
+
+#contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #aecdce;
+}
+#contact h1 {
+  color: #2c6089;
+}
+form input, form textarea {
+  border: 2px solid #7cb3b5;
+}
+.btn-box .common-btn {
+  background: #2c6089;
+}
+.contact-right-col img {
+  filter: grayscale(70%);
+}

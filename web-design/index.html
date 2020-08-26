@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Web Design Landing Page</title>
+  <!-- CSS -->
+  <!-- Color Switcher -->
+  <link rel="stylesheet" href="dist/color-switcher.css">
+  <!-- flipster gallery -->
+  <link rel="stylesheet" href="dist/jquery.flipster.min.css">
+  <!-- JS -->
+  <script src="jquery.min.js"></script>
+  <script src="dist/jquery.flipster.min.js"></script>
+  <script src="dist/color-switcher.js"></script>
+  <script src="dist/scrollreveal.min.js"></script>
+
+  <!-- My CSS Styles -->
+  <link rel="stylesheet" href="css/white.css">
+  <link rel="stylesheet" href="css/teal.css">
+  <link rel="stylesheet" href="css/blue.css">
+  <link rel="stylesheet" href="css/pink.css">
+  <link rel="stylesheet" href="css/purple.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top offset">
+
+  <header id="navbar">
+    <div class="menu-left">
+      <a href="#services" class="two load-hidden">SERVICES</a>
+      <a href="#features" class="one load-hidden">WHY US</a>
+    </div>
+    <div class="logo load-hidden" id="logo">
+      <a href="#top">
+        WH
+        <!-- <img src="images/logo-pink-thicker.png" alt=""> -->
+      </a>
+    </div>
+    <div class="menu-right">
+      <a href="#portfolio" class="one load-hidden">PORTFOLIO</a>
+      <a href="#contact" class="two load-hidden">CONTACT</a>
+    </div>
+    <img src="images/menu.png" id="menuBtn" alt="">
+  </header>
+
+  <!-- Side Navigation -->
+  <nav id="sideNav">
+    <ul>
+      <li>
+        <a href="#top">HOME</a>
+      </li>
+      <li>
+        <a href="#services">SERVICES</a>
+      </li>
+      <li>
+        <a href="#features">FEATURES</a>
+      </li>
+      <li>
+        <a href="#portfolio">RECENT WORK</a>
+      </li>
+      <li>
+        <a href="#contact">CONTACT</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero load-hidden">
+    <!-- <img src="images/bg.jpg" id="bg" alt=""> -->
+    <img src="images/bg-pink-stars.png" id="bg" alt="">
+    <img src="images/sun-no-blur-2049px.svg" id="sun" alt="">
+    <img src="images/mountains-right-2049px.svg" id="mountain-right" alt="">
+    <img src="images/mountains-left-2049px.svg" id="mountain-left" alt="">
+    <img src="images/wayne-sm.png" id="wayne" alt="">
+
+
+    <div class="header-intro-content">
+      <h2 id="left-intro">Modern<br> <span class="top">Business</span><br><span class="bottom">Websites</span>
+      </h2>
+
+      <div id="right-intro">
+        <h3>Hi, I'm Wayne</h3>
+        <p>I make stunning websites to promote and grow your online presence.</p>
+        <span>Give your business an upgrade.</span>
+      </div>
+    </div>
+
+    <!-- Social-Icons -->
+    <div class="social-icons-left">
+      <a href=""><img src="images/facebook.png" alt=""></a>
+      <a href=""><img src="images/instagram.png" alt=""></a>
+      <a href=""><img src="images/twitter.png" alt=""></a>
+      <a href=""><img src="images/linkedin.png" alt=""></a>
+    </div>
+
+  </section>
+
+
+  <section class="intro">
+    <h3 id="header" class="sec_header">We make the web</h3>
+    <p class="p">Now more than ever before you need to get your business online. Online where your customers can find
+      you and carry out their business from home.</p>
+    <p class="p">We provide web solutions to meet your business needs. Whether you have a modest service or a thriving
+      storefront with lots of inventry, we create web solutions to meet your needs.</p>
+    <p class="p">Getting a web-based business up and running can be a dauting task but rest assured we've done this
+      before. Let us take the hassle out of getting online and get you set up for success.</p>
+  </section>
+
+  <section class="services offset" id="services">
+    <h3 id="header" class="sec_header color-2">How can I help you?</h3>
+
+    <div class="row">
+      <div class="col">
+        <img src="images/design.svg" alt="">
+        <div class="content">
+          <h4>Web Design</h4>
+          <p>We create web sites from the ground up including:</p>
+          <p> Personal Blogs, Photography Portfolios, App Landing Pages, Marketing Sites, eCommerce Stores and Business
+            Websites.</p>
+        </div>
+      </div>
+      <div class="col">
+        <img src="images/social.svg" alt="">
+        <div class="content">
+          <h4>Social Media Marketing</h4>
+          <p>A strong social media presence is an essential marketing tactic.</p>
+          <p>We implement free and paid SM-marketing campaigns that meet your budget.</p>
+        </div>
+      </div>
+      <div class="col">
+        <img src="images/writing.svg" alt="">
+        <div class="content">
+          <h4>Content Writing & SEO</h4>
+          <p>Building a brand requires producing great web content and adding to it over a period of months.</p>
+          <p>We create regular helpful and informative articles to engage and build trust among your consumers. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h3 id="header" class="sec_header">Why choose us</h3>
+
+    <div class=" bg-white">
+      <div class="row container">
+        <div class="col-left padding-right">
+          <img src="images/fast-speeds.svg" alt="">
+        </div>
+        <div class="col-right padding-left">
+          <h3>Lightning fast speeds even on slow internet connections</h3>
+          <p>Did you know that a 3 seconds wait you lose 30% more customers?</p><br>
+          <p>No more waiting for pages to load with our clean code and highly compressed images. Your clientelle will
+            thank you and stick around longer meaning higher ROI.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="color-3">
+      <div class="row container">
+        <div class="col-left padding-right">
+          <h3 class="color-white">Fully Responsive Design using up to date web technologies</h3>
+          <p>A responsive design means your website will look good on all devices, PC, tablets and mobile phones.</p>
+          <br>
+          <p>This means that all of your potential customers will be able to find your business.</p>
+
+        </div>
+        <div class="col-right padding-left">
+          <img src="images/responsive-design.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white">
+      <div class="row container">
+        <div class="col-left padding-right">
+          <img src="images/shopping.svg" alt="">
+        </div>
+        <div class="col-right padding-left">
+          <h3>eCommerce at your doorstep</h3>
+          <p>Now, more than ever businesses need to be provide a virtual shopping platform and be able to accept
+            payments instantly online.</p><br>
+          <p>We've got you covered. Have an online store up and running in weeks.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="recent-work offset" id="portfolio">
+    <div class="container">
+      <h3 id="header" class="sec_header">Recent Work</h3>
+
+      <article id="demo-flat" class="demo">
+        <h3>Scroll or swipe left or right to view our work</h3>
+
+        <div id="flat">
+          <ul>
+            <li data-flip-title="Red">
+              <picture>
+                <source srcset="images/gallery-img/w350/ai-350.png" media="(max-width: 576px)">
+                <source srcset="images/gallery-img/w350/ai-350.png" media="(max-height: 450px)">
+                <source srcset="images/gallery-img/w500/ai-500.png" media="(max-width: 991px)">
+                <source srcset="images/gallery-img/w500/ai-500.png" media="(max-height: 700px)">
+                <img src="images/gallery-img/ai-wide-746x520.png" data-src="images/gallery-img/ai-wide-746x520.png">
+              </picture>
+              <div class="content">
+                <a href="https://portfolioprime.github.io/robotics/">
+                  <p>View <span>AI Robotics theme</span> in a new tab</p>
+                </a>
+            </li>
+            <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+              <picture>
+                <source srcset="images/gallery-img/w350/dog-350.png" media="(max-width: 576px)">
+                <source srcset="images/gallery-img/w350/dog-350.png" media="(max-height: 450px)">
+                <source srcset="images/gallery-img/w500/dog-500.png" media="(max-width: 991px)">
+                <source srcset="images/gallery-img/w500/dog-500.png" media="(max-height: 700px)">
+                <img src="images/gallery-img/dog-wide.png" data-src="images/gallery-img/dog-wide.png">
+              </picture>
+              <div class="content">
+                <a href="https://portfolioprime.github.io/dogs/">
+                  <p>View <span>Man's Best Friend website</span> in a new tab</p>
+                </a>
+              </div>
+            </li>
+            <li data-flip-title="Deep Lilac" data-flip-category="Purples">
+              <picture>
+                <source srcset="images/gallery-img/w350/fitness-350.png" media="(max-width: 576px)">
+                <source srcset="images/gallery-img/w350/fitness-350.png" media="(max-height: 450px)">
+                <source srcset="images/gallery-img/w500/fitness-500.png" media="(max-width: 991px)">
+                <source srcset="images/gallery-img/w500/fitness-500.png" media="(max-height: 700px)">
+                <img src="images/gallery-img/fitness-wide.png" data-src="images/gallery-img/fitness-wide.png">
+              </picture>
+              <div class="content">
+                <a href="https://portfolioprime.github.io/fitness/">
+                  <p>View <span>Fitness Gym website</span> in a new tab</p>
+                </a>
+            </li>
+            <li data-flip-title="Daisy Bush" data-flip-category="Purples">
+              <picture>
+                <source srcset="images/gallery-img/w350/kungfu-350.png" media="(max-width: 576px)">
+                <source srcset="images/gallery-img/w350/kungfu-350.png" media="(max-height: 450px)">
+                <source srcset="images/gallery-img/w500/kungfu-500.png" media="(max-width: 991px)">
+                <source srcset="images/gallery-img/w500/kungfu-500.png" media="(max-height: 700px)">
+                <img src="images/gallery-img/fitness-wide.png" data-src="images/gallery-img/fitness-wide.png">
+              </picture>
+              <div class="content">
+                <a href="https://kaizenkungfu.co.za/">
+                  <p>View <span>Kaizen Kungfu website</span> in a new tab</p>
+                </a>
+            </li>
+            <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
+              <picture>
+                <source srcset="images/gallery-img/w350/panda-2-350.png" media="(max-width: 576px)">
+                <source srcset="images/gallery-img/w350/panda-2-350.png" media="(max-height: 450px)">
+                <source srcset="images/gallery-img/w500/panda-2-500.png" media="(max-width: 991px)">
+                <source srcset="images/gallery-img/w500/panda-2-500.png" media="(max-height: 700px)">
+                <img src="images/gallery-img/fitness-wide.png" data-src="images/gallery-img/fitness-wide.png">
+              </picture>
+              <div class="content">
+                <a href="https://orphanlove81.github.io/">
+                  <p>View <span>English Teaching Site</span> in a new tab</p>
+                </a>
+            </li>
+            <li data-flip-title="Dodger Blue" data-flip-category="Blues">
+              <picture>
+                <source srcset="images/gallery-img/w350/rosa-wide-350.png" media="(max-width: 576px)">
+                <source srcset="images/gallery-img/w350/rosa-wide-350.png" media="(max-height: 450px)">
+                <source srcset="images/gallery-img/w500/rosa-500.png" media="(max-width: 991px)">
+                <source srcset="images/gallery-img/w500/rosa-500.png" media="(max-height: 700px)">
+                <img src="images/gallery-img/rosa-wide-746x520.png" data-src="images/gallery-img/rosa-wide-746x520.png">
+              </picture>
+              <div class="content">
+                <a href="https://portfolioprime.github.io/rosa/">
+                  <p>View <span>Rosa Restaurant website</span> in a new tab</p>
+                </a>
+            </li>
+            <li data-flip-title="Cyan" data-flip-category="Blues">
+              <picture>
+                <source srcset="images/gallery-img/w350/music-350.png" media="(max-width: 576px)">
+                <source srcset="images/gallery-img/w350/music-350.png" media="(max-height: 450px)">
+                <source srcset="images/gallery-img/w500/music-500.png" media="(max-width: 991px)">
+                <source srcset="images/gallery-img/w500/music-500.png" media="(max-height: 700px)">
+                <source srcset="images/gallery-img/text7.gif" media="(max-height: 450px)">
+                <img src="images/gallery-img/music-wide.png" data-src="images/gallery-img/music-wide.png">
+              </picture>
+              <div class="content">
+                <a href="https://portfolioprime.github.io/music/">
+                  <p>View <span>Music Workshop Theme</span> in a new tab</p>
+                </a>
+            </li>
+            <li data-flip-title="Robin's Egg" data-flip-category="Blues">
+              <picture>
+                <source srcset="images/gallery-img/w350/marvel-350.png" media="(max-width: 576px)">
+                <source srcset="images/gallery-img/w350/marvel-350.png" media="(max-height: 450px)">
+                <source srcset="images/gallery-img/w500/marvel-500.png" media="(max-width: 991px)">
+                <source srcset="images/gallery-img/w500/marvel-500.png" media="(max-height: 700px)">
+                <img src="images/gallery-img/marvel-wide.png" data-src="images/gallery-img/marvel-wide.png">
+              </picture>
+              <div class="content">
+                <a href="https://i-love-you-marvel-avenger-3000.github.io/">
+                  <p>View <span>Marvel Avengers Fanpage</span> in a new tab</p>
+                </a>
+            </li>
+            <li data-flip-title="Deep Sea" data-flip-category="Greens">
+              <picture>
+                <source srcset="images/gallery-img/w350/photo-350.png" media="(max-width: 576px)">
+                <source srcset="images/gallery-img/w350/photo-350.png" media="(max-height: 450px)">
+                <source srcset="images/gallery-img/w500/photo-500.png" media="(max-width: 991px)">
+                <source srcset="images/gallery-img/w500/photo-500.png" media="(max-height: 700px)">
+                <img src="images/gallery-img/photo-wide.png" data-src="images/gallery-img/photo-wide.png">
+              </picture>
+              <div class="content">
+                <a href="https://portfolioprime.github.io/photo-portfolio/">
+                  <p>View <span>Photography Portfolio</span> in a new tab</p>
+                </a>
+            </li>
+            <li data-flip-title="Apple" data-flip-category="Greens">
+              <picture>
+                <source srcset="images/gallery-img/w350/restaurant-350.png" media="(max-width: 576px)">
+                <source srcset="images/gallery-img/w350/restaurant-350.png" media="(max-height: 450px)">
+                <source srcset="images/gallery-img/w500/restaurant-500.png" media="(max-width: 991px)">
+                <source srcset="images/gallery-img/w500/restaurant-500.png" media="(max-height: 700px)">
+                <img src="images/gallery-img/restaurant-wide.png" data-src="images/gallery-img/restaurant-wide.png">
+              </picture>
+              <div class="content">
+                <a href="https://portfolioprime.github.io/restaurant/">
+                  <p>View <span>Restaurant theme</span> in a new tab</p>
+                </a>
+            </li>
+          </ul>
+        </div>
+
+        <script>
+          var flat = $("#flat").flipster({
+            style: 'flat',
+            spacing: -0.25,
+            buttons: true,
+          });
+        </script>
+      </article>
+
+      <div class="text-center">
+        <a href="https://portfolioprime.github.io" class="button">View All Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="offset">
+    <div class="container contact-row">
+      <h1>Let's discuss your website project<br><span> Drop me a line and I'll get back to you in 24hours</span></h1>
+
+      <div class="contact-left-col">
+        <!-- <h1>Drop me a line to<br>discuss your website project</h1> -->
+        <form action="">
+          <input type="text" placeholder="Enter Name">
+          <input type="email" placeholder="Enter Email">
+          <textarea name="message" id="message" placeholder="How can we help you?"></textarea>
+          <div class="btn-box">
+            <button class="common-btn">Submit Message</button>
+            <!-- <button class="common-btn">Start Free Trial</button> -->
+          </div>
+        </form>
+      </div>
+      <div class="contact-right-col">
+        <img src="images/work-together.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container footer-row">
+      <hr>
+      <div class="footer-left-col">
+        <div class="footer-links">
+          <div class="link-title">
+            <h4>Product</h4>
+            <small>Our Plan</small><br>
+            <small>Free Trial</small>
+          </div>
+          <div class="link-title">
+            <h4>About Us</h4>
+            <small>Request Demo</small><br>
+            <small>FAQs</small>
+          </div>
+          <div class="link-title">
+            <h4>Support</h4>
+            <small>Features</small><br>
+            <small>Contact Us</small>
+          </div>
+          <div class="link-title">
+            <h4>Explore</h4>
+            <small>Find a non-profit</small><br>
+            <small>Corporate Solution</small>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right-col">
+        <div class="footer-info">
+          <div class="copyright-text">
+            <small>created by</small><br>
+            <small>Wayne Hendricks</small>
+          </div>
+
+          <div class="footer-logo">
+            <div class="logo" id="logo">
+              <a href="#top">
+                WH
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    //////////////////////////////////////////////
+    //HERO SCROLL Animations
+    //////////////////////////////////////////////
+
+    // let bg = document.getElementById("bg");
+    // let sun = document.getElementById("sun");
+    // let mountainLeft = document.getElementById("mountain-left");
+    // let mountainRight = document.getElementById("mountain-right");
+    // let wayne = document.getElementById("wayne");
+    // let textLeft = document.getElementById("left-intro");
+    // let textRight = document.getElementById("right-intro");
+    // let header = document.getElementById("header");
+
+    // window.addEventListener('scroll', function () {
+    //   var value = window.scrollY;
+
+    // bg.style.top = value * 0.5 + 'px';
+    // sun.style.top = -value * 0.5 + 'px';
+    // mountainRight.style.left = value * 0.4 + 'px';
+    // mountainLeft.style.left = -value * 0.6 + 'px';
+    // wayne.style.left = -value * 0.3 + 'px';
+    // textLeft.style.top = value * .2 + 'px';
+    // textRight.style.top = value * .2 + 'px';
+    // })
+
+    //////////////////////////////////////////////
+    //Start Side MENU
+    /////////////////////////////////////////////
+    var menuBtn = document.getElementById("menuBtn");
+    var sideNav = document.getElementById("sideNav");
+
+    sideNav.style.right = "-100%";
+    menuBtn.onclick = function () {
+      if (sideNav.style.right == "-100%") {
+        sideNav.style.right = "0";
+      }
+      else {
+        sideNav.style.right = "-100%";
+      }
+    }
+
+    //////////////////////////////////////////////
+    //Start SCROLL TO TOP BUTTON 
+    /////////////////////////////////////////////
+
+    // SCROLL TO TOP BUTTON
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+    /////////////////////////////////////////////
+    //Start ColorSwitcher 
+    ////////////////////////////////////////////
+    var colorSheets = [
+      {
+        color: "#e8f5f3;",
+        title: "Switch to Default",
+        href: "./css/style.css"
+      },
+      {
+        color: "#3ba4a4",
+        title: "Switch to Teal",
+        href: "./css/teal.css"
+      },
+      {
+        color: "#507c9f",
+        title: "Switch to Blue",
+        href: "./css/blue.css"
+      },
+      {
+        color: "#ff4576",
+        title: "Switch to Pink",
+        href: "./css/pink.css"
+      },
+      {
+        color: "#b8a3c2",
+        title: "Switch to Purple",
+        href: "./css/purple.css"
+      }
+    ];
+
+    ColorSwitcher.init(colorSheets);
+
+    /////////////////////
+    /* Scroll Reveal */
+    ///////////////////// 
+    ScrollReveal().reveal('section, .ColorSwitcher', {
+      delay: 0,
+      duration: 750,
+      easing: 'ease-in',
+      opacity: 0,
+    });
+
+    ScrollReveal().reveal('.logo', {
+      delay: 0,
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+    });
+
+    ScrollReveal().reveal('.menu-left .one, .menu-right .one', {
+      delay: 300,
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+    });
+
+    ScrollReveal().reveal('.menu-left .two, .menu-right .two', {
+      delay: 600,
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+    });
+
+    ScrollReveal().reveal('#left-intro', {
+      delay: 0,
+      distance: '200px',
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+      origin: 'left'
+    });
+
+    ScrollReveal().reveal('#right-intro', {
+      delay: 350,
+      distance: '200px',
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+      origin: 'right'
+    });
+
+    ScrollReveal().reveal('.hero #wayne', {
+      delay: 500,
+      distance: '200px',
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+      origin: 'bottom'
+    });
+
+    ScrollReveal().reveal('.hero #sun', {
+      delay: 1050,
+      scale: 0.5,
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+    });
+
+    ScrollReveal().reveal('.sec_header, #contact h1', {
+      delay: 150,
+      distance: '100px',
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+      origin: 'bottom'
+    });
+
+    ScrollReveal().reveal('.intro p', {
+      delay: 500,
+      distance: '100px',
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+      origin: 'bottom'
+    });
+
+    ScrollReveal().reveal('.demo', {
+      delay: 600,
+      duration: 600,
+      easing: 'ease-in',
+      opacity: 0
+    });
+
+    ScrollReveal().reveal('.col img', {
+      delay: 500,
+      distance: '100px',
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+      origin: 'bottom'
+    });
+    ScrollReveal().reveal('.col h4', {
+      delay: 900,
+      distance: '100px',
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+      origin: 'bottom'
+    });
+    ScrollReveal().reveal('.col p', {
+      delay: 1250,
+      distance: '100px',
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+      origin: 'bottom'
+    });
+
+    ScrollReveal().reveal('.col-left, .contact-left-col', {
+      delay: 500,
+      distance: '100px',
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+      origin: 'left'
+    });
+
+    ScrollReveal().reveal('.col-right, .contact-right-col', {
+      delay: 1000,
+      distance: '100px',
+      duration: 500,
+      easing: 'ease-in',
+      opacity: 0,
+      origin: 'right'
+    });
+  </script>
+</body>
+
+</html>

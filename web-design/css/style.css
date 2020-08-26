@@ -116,7 +116,7 @@ header {
   z-index: 12000;
   position: sticky;
   top: 0;
-  transition: background 0.1s ease;
+  /* transition: background 0.2s ease; */
   /* filter: hue-rotate(0deg); */
   /* filter: hue-rotate(199deg) grayscale(100%); */
   background: #fff;
@@ -159,7 +159,7 @@ header a {
   position: fixed;
   right: -50%;
   top: 0;
-  background: #979797;
+  /* background: #979797; */
   background: #f5f5f5;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   z-index: 11500;
@@ -213,18 +213,17 @@ section.hero img {
   pointer-events: none;
 }
 
-section.hero::after {
+/* section.hero::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #2c6089;
   background: #77e0e0;
   z-index: 10000;
   mix-blend-mode: color;
-}
+} */
 
 #bg {
   filter: grayscale(100%) invert(100%);
@@ -237,8 +236,10 @@ section.hero::after {
 }
 
 section.hero img#sun {
-  filter: brightness(120%);
-  filter: drop-shadow(0 0 100px #fff);
+  /* filter: brightness(120%);
+  filter: drop-shadow(0 0 100px #fff); */
+  /* filter: drop-shadow(0 0 100px #fff0f1) hue-rotate(180deg); */
+  filter: drop-shadow(0 0 100px #fff0f1) hue-rotate(125deg) brightness(107%);
   object-fit: contain;
   transform: scale(0.9);
   top: 0 !important;
@@ -473,7 +474,6 @@ section.services .content p {
 .recent-work {
   padding: 60px 0;
   background: #e8f5f3;
-  background-attachment: fixed;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
@@ -643,7 +643,7 @@ form textarea {
 }
 
 .btn-box .common-btn:hover {
-  background: #6398b1;
+  /* background: #6398b1; */
   background: #e4e4e6;
   color: #333;
 }

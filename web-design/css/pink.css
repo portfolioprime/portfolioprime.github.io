@@ -43,13 +43,17 @@ section.hero #right-intro h3 {
 section.hero #right-intro {
   color: #fff;
 }
-section.hero::after {
+/* section.hero::after {
   background: #e5295b;
   z-index: 10000;
-}
+} */
 
 #bg {
   filter: none;
+}
+
+section.hero img#sun {
+  filter: drop-shadow(0 0 100px #f0eaeb) hue-rotate(-55deg) brightness(103%);
 }
 
 #mountain-left,

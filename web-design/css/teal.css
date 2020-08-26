@@ -1,10 +1,12 @@
 body {
   background: #0c7575;
+  background: #01716a;
 }
 
 header {
   filter: hue-rotate(0deg);
   background: #0c7575;
+  background: #01716a;
 }
 
 .menu-right a,
@@ -57,12 +59,16 @@ section.hero #right-intro span {
   display: none;
 }
 
-section.hero::after {
+/* section.hero::after {
   background: #77e0e0;
-}
+} */
 
 #bg {
-  filter: none;
+  filter: saturate(150%) hue-rotate(-160deg) brightness(100%);
+}
+
+section.hero img#sun {
+  filter: drop-shadow(0 0 100px #d9cc9a) hue-rotate(115deg) brightness(106%);
 }
 
 #mountain-left,

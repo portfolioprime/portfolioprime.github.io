@@ -122,9 +122,7 @@ section.services .content p {
   background: #b8a3c2;
 }
 .recent-work h3.sec_header {
-  background-image: linear-gradient(to top, #362548, #533368, #704986);
-  background-clip: text;
-  color: transparent;
+  color: #593d6d;
 }
 
 #demo-flat .flipster__button {
@@ -146,12 +144,6 @@ section.services .content p {
   color: #d5d5d5;
 }
 
-.recent-work h2 {
-  color: #e53866;
-}
-.recent-work p.sub-heading {
-  color: #513266;
-}
 .recent-work .button {
   background-color: #e63f64;
   color: #fff;

@@ -513,6 +513,10 @@ section.services .content p {
   background: #fff;
 }
 
+/* #demo-flat .flipster__item__content img {
+  width: 746px;
+}
+ */
 #demo-flat .flipster__button {
   padding: 10px;
   opacity: 1;

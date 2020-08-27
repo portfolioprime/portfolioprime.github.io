@@ -405,7 +405,7 @@
         <!-- <h1>Drop me a line to<br>discuss your website project</h1> -->
 
         <!-- GET FORM ENDPOINT with my custom form code -->
-        <form action="https://getform.io/f/3b2f44af-d8ea-4a19-9191-3c38975b2ab6" method="POST">
+        <form id="ajaxForm" action="https://getform.io/f/3b2f44af-d8ea-4a19-9191-3c38975b2ab6" method="POST">
 
           <div class="fieldset">
             <label for="name" id="name-label">Name *</label>
@@ -424,7 +424,7 @@
 
           <div class="fieldset">
             <label for="dropdown" id="dropdown-label">Which service are you interested in?</label>
-            <select name="fluency" id="dropdown" class="form-control">
+            <select name="service" id="dropdown" class="form-control">
               <option value="" selected disabled>Select an option</option>
               <option value="web-design">Web design</option>
               <option value="advertising">Facebook or Google Advertising</option>
@@ -436,6 +436,11 @@
           <p>What is your inquiry?</p>
           <textarea name="message" id="message" placeholder="How can we help you?" name="message"></textarea>
 
+          <div class="success">
+            <div class="message">
+              Thank you for your inquiry. I'll be in contact shortly.
+            </div>
+          </div>
           <div class="btn-box">
             <button class="common-btn">Submit Message</button>
           </div>
@@ -520,35 +525,6 @@
   <script src="dist/color-switcher.js"></script>
 
   <script>
-
-    // Passive Event listener Example
-    // document.addEventListener('touchstart', onTouchStart, { passive: true });
-
-
-    //////////////////////////////////////////////
-    //HERO SCROLL Animations
-    //////////////////////////////////////////////
-
-    // let bg = document.getElementById("bg");
-    // let sun = document.getElementById("sun");
-    // let mountainLeft = document.getElementById("mountain-left");
-    // let mountainRight = document.getElementById("mountain-right");
-    // let wayne = document.getElementById("wayne");
-    // let textLeft = document.getElementById("left-intro");
-    // let textRight = document.getElementById("right-intro");
-    // let header = document.getElementById("header");
-
-    // window.addEventListener('scroll', function () {
-    //   var value = window.scrollY;
-
-    // bg.style.top = value * 0.5 + 'px';
-    // sun.style.top = -value * 0.5 + 'px';
-    // mountainRight.style.left = value * 0.4 + 'px';
-    // mountainLeft.style.left = -value * 0.6 + 'px';
-    // wayne.style.left = -value * 0.3 + 'px';
-    // textLeft.style.top = value * .2 + 'px';
-    // textRight.style.top = value * .2 + 'px';
-    // })
 
     //////////////////////////////////////////////
     //Start Side MENU
@@ -757,6 +733,29 @@
       easing: 'ease-out',
       opacity: 0,
       origin: 'right'
+    });
+
+    /* FORM SUBMIT with Ajax */
+    $("#ajaxForm").submit(function (e) {
+      e.preventDefault();
+      var action = $(this).attr("action");
+      $.ajax({
+        type: "POST",
+        url: action,
+        crossDomain: true,
+        data: new FormData(this),
+        dataType: "json",
+        contentType: "multipart/form-data",
+        processData: false,
+        contentType: false,
+        headers: {
+          "Accept": "application/json"
+        }
+      }).done(function () {
+        $('.success').addClass('is-active');
+      }).fail(function () {
+        alert('An error occurred please try again later.')
+      });
     });
 
   </script>

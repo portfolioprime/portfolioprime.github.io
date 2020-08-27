@@ -138,7 +138,8 @@ header a {
   color: #666;
   filter: grayscale(100%);
 }
-.menu-left, .menu-right {
+.menu-left,
+.menu-right {
   display: flex;
   justify-content: space-around;
 }
@@ -590,19 +591,20 @@ section.services .content p {
 
 .contact-left-col,
 .contact-right-col {
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
+  flex-basis: 100%;
 }
-
-.contact-right-col img {
+/* .contact-right-col img {
   width: 95%;
   padding-left: 5%;
-}
+} */
 
+/* Contact Form GETFORM ENDPOINT */
 form {
   max-width: 550px;
   margin: 30px 0;
+  /* display: none; */
 }
-
 form input {
   width: 100%;
   padding: 15px 10px;
@@ -612,7 +614,6 @@ form input {
   box-sizing: border-box;
   border: 2px solid #e4e4e6;
 }
-
 form textarea {
   width: 100%;
   height: 200px;
@@ -621,6 +622,50 @@ form textarea {
   border: 2px solid #e4e4e6;
   resize: vertical; /* user can resize vertically, but width is fixed */
 }
+/* END Contact Form GETFORM ENDPOINT */
+
+/* Contact Form Bitrix24 */
+#bx_form_iframe_6 {
+  /* max-height: 809px !important; */
+  min-height: 606px;
+  width: 100%;
+}
+
+.flexible-middle-width .content-wrap {
+  max-width: 100% !important;
+}
+
+.crm-webform-iframe {
+  background-color: transparent;
+}
+
+.content-wrap .content {
+  background-color: transparent;
+}
+
+.crm-webform-wrapper {
+  background: transparent;
+}
+
+.page-theme-transparent .content {
+  background: transparent !important;
+}
+
+.crm-webform-fieldset {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.crm-webform-fieldset .row {
+  margin-left: 1%;
+  margin-right: 1%;
+  flex-basis: 48%;
+}
+
+.crm-webform-group.crm-webform-captcha {
+  max-height: 108px;
+}
+/* END Contact Form Bitrix24 */
 
 .btn-box {
   width: 100%;
@@ -699,8 +744,12 @@ hr {
   color: #777;
 }
 
-.footer-logo img {
-  width: 100px;
+.footer-logo {
+  margin-left: 35px;
+}
+
+.footer-logo .logo {
+  padding: 9px;
 }
 
 .copyright-text {
@@ -850,9 +899,6 @@ hr {
   .footer-left-col {
     flex-basis: 60%;
   }
-  .footer-logo {
-    margin-left: 35px;
-  }
 }
 
 @media screen and (max-width: 991px) {
@@ -870,9 +916,6 @@ hr {
   .menu-left,
   .menu-right {
     display: none;
-  }
-  .logo {
-    width: 48px;
   }
   @media (orientation: landscape) {
     section.hero {
@@ -925,6 +968,11 @@ hr {
   #demo-flat .flipster__item__content {
     max-width: 90%;
     margin: auto;
+  }
+}
+@media screen and (max-width: 807px) {
+  #bx_form_iframe_6 {
+    min-height: 770px;
   }
 }
 
@@ -1001,6 +1049,9 @@ hr {
   .contact-right-col {
     flex-basis: 100%;
   }
+  .crm-webform-fieldset {
+    display: block;
+  }
   .contact-right-col img {
     display: none;
   }
@@ -1017,7 +1068,7 @@ hr {
   }
   .copyright-text {
     text-align: left;
-  }  
+  }
   .copyright-text small {
     font-size: 12.5px;
   }

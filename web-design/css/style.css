@@ -606,26 +606,74 @@ section.services .content p {
 
 /* Contact Form GETFORM ENDPOINT */
 form {
-  max-width: 550px;
+  /* max-width: 550px; */
   margin: 30px 0;
-  /* display: none; */
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 100;
+  font-size: 14px;
+}
+form .fieldset {
+  flex-basis: 48%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+form select#dropdown {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 13px;
 }
 form input {
   width: 100%;
-  padding: 15px 10px;
+  padding: 16px 10px;
   margin-bottom: 20px;
   outline: none;
   box-shadow: none;
   box-sizing: border-box;
-  border: 2px solid #e4e4e6;
+  border: 1px solid #e4e4e6;
+  border-radius: 3px;
+}
+form p {
+  margin-left: 1%;
+  font-size: 14px;
 }
 form textarea {
-  width: 100%;
+  width: 98%;
   height: 200px;
   padding: 15px 10px;
   margin-bottom: 25px;
-  border: 2px solid #e4e4e6;
+  margin-right: 1%;
+  margin-left: 1%;
+  border: 1px solid #e4e4e6;
+  border-radius: 3px;
   resize: vertical; /* user can resize vertically, but width is fixed */
+}
+.btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.btn-box button {
+  flex-basis: 25%;
+  padding: 18px 0;
+}
+
+.btn-box .common-btn {
+  background: #5a5b6a;
+  border: 2px solid #2c6089;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+
+.btn-box .common-btn:hover {
+  /* background: #6398b1; */
+  background: #e4e4e6;
+  color: #333;
 }
 /* END Contact Form GETFORM ENDPOINT */
 
@@ -671,32 +719,6 @@ form textarea {
   max-height: 108px;
 }
 /* END Contact Form Bitrix24 */
-
-.btn-box {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.btn-box button {
-  flex-basis: 48%;
-  padding: 18px 0;
-}
-
-.btn-box .common-btn {
-  background: #5a5b6a;
-  border: 2px solid #2c6089;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  transition: background 0.1s ease;
-}
-
-.btn-box .common-btn:hover {
-  /* background: #6398b1; */
-  background: #e4e4e6;
-  color: #333;
-}
 
 /* Footer Section */
 #footer {
@@ -896,10 +918,10 @@ hr {
     font-size: 12px;
   }
   #contact h1 {
-    padding: 0 0 0 3rem;
+    padding: 0 3rem;
   }
   #contact form {
-    padding: 0 0 0 3rem;
+    padding: 0 3rem;
   }
   .footer-left-col {
     flex-basis: 60%;
@@ -1059,6 +1081,7 @@ hr {
   #contact form {
     max-width: 100%;
     padding: 0;
+    display: block;
   }
   .contact-left-col,
   .contact-right-col {

@@ -31,6 +31,11 @@ nav ul li a {
   filter:  hue-rotate(0deg);/* pink */
 }
 
+section.hero {
+  background-image: url(../images/bg-pink-stars.png);
+  background-position: center;
+}
+
 section.hero #left-intro {
   color: #d5d5d5;
 }

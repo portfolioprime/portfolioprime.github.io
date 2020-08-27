@@ -513,10 +513,11 @@ section.services .content p {
   background: #fff;
 }
 
-/* #demo-flat .flipster__item__content img {
+#demo-flat .flipster__item__content img {
   width: 746px;
+  height: 520px;
 }
- */
+
 #demo-flat .flipster__button {
   padding: 10px;
   opacity: 1;
@@ -943,6 +944,10 @@ hr {
     section.hero #right-intro span {
       font-size: 1rem;
     }
+    #demo-flat .flipster__item__content img {
+      width: 358px;
+      height: 250px;
+    }
   }
 
   section.hero img#wayne {
@@ -972,6 +977,12 @@ hr {
   #demo-flat .flipster__item__content {
     max-width: 90%;
     margin: auto;
+  }
+  @media (orientation: portrait) {
+    #demo-flat .flipster__item__content img {
+      width: 502px;
+      height: 350px;
+    }
   }
 }
 @media screen and (max-width: 807px) {
@@ -1104,6 +1115,14 @@ hr {
     line-height: 1.8rem;
     margin-bottom: 4rem;
   }
+
+  @media (orientation: portrait) {
+    #demo-flat .flipster__item__content img {
+      width: 358px;
+      height: 250px;
+    }
+  }
+
   section.services p {
     padding: 0px;
   }

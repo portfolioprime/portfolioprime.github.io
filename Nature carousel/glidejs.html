@@ -7,9 +7,8 @@
   <link rel="stylesheet" href="font-awesome/css/all.min.css">
   <title>Travel Nature with Carousel</title>
   <!-- jQuery for Glide.js Carousel -->
-  <!-- <script src="jquery.min.js"></script> -->
+  <script src="jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="custom.css">
 
 
 </head>
@@ -123,13 +122,13 @@
           </button>
         </div>
 
-        <div class="carousel-controls">
+        <!-- <div class="carousel-controls">
           <i class="fas fa-chevron-left left"
-          onclick="slideLeft('-274px')"></i>
+          onclick="plusSlides(-1)"></i>
 
           <i class="fas fa-chevron-right right"
-          onclick="slideRight('0')"></i>
-        </div>
+          onclick="plusSlides(1)"></i>
+        </div> -->
 
         <div class="carousel-indicator">
           <p><span>01</span></p>
@@ -144,6 +143,40 @@
   </div>
 
   <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"
+    integrity="sha512-BXASbMmKLu+RC5TDnkupyhvrjiOQXILh/5zgIS8k5JAC71a73lNweVEg/X+9XJQ7GK22PH9WpztY3zqrji+xrQ=="
+    crossorigin="anonymous"></script>
+
+  <script>
+
+    new Glide('.glide', {
+      type: 'slider',
+      autoplay: 3000,
+      startAt: 0,
+      perView: 4,
+      gap: 20,
+      rewind: true,
+      breakpoints: {
+        1700: {
+          perView: 3
+        },
+        1300: {
+          perView: 2
+        },
+        991: {
+          perView: 3
+        },
+        730: {
+          perView: 2
+        },
+        500: {
+          perView: 1
+        }
+      }
+    }).mount()
+
+  </script>
+
   <script src="app.js"></script>
 </body>
 

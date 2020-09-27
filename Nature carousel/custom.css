@@ -1,0 +1,20 @@
+.carousel-item {
+  width: 248px !important;
+  min-width: 240px !important;
+  height: 360px !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 20px !important;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  position: relative;
+  cursor: pointer;
+  animation: right-in 0.5s ease-in-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
+}

@@ -11,29 +11,43 @@ toggler.addEventListener('click', menuToggle);
 
 
 
-/* // My Carousel Attempt
+// My Carousel Attempt
 // var & event-listener buttons
 document.querySelector(".left").addEventListener("click", slideLeft);
 
 document.querySelector(".right").addEventListener("click", slideRight);
 
-// var item = document.querySelector('.carousel-item');
-
 
 // Function slide left
-function slideLeft() {
-  document.querySelector('.glide__slides').style.left = '-274px';
+function slideLeft(left) {
+  document.querySelector('.glide__slides').style.left = left;
 }
 
-function slideRight() {
-  document.querySelector('.glide__slides').style.left = '0';
+function slideRight(right) {
+  document.querySelector('.glide__slides').style.left = right;
 }
- */
 
 
+
+/* Dirty functions */
+// Change Hero Img
  function heroChange(hmmm) {
-  document.querySelector('.hero').style.background = hmmm;
+  var hero = document.querySelector('.hero');
+
+  hero.style.background = hmmm;
+
  }
-//  function number(hmmm) {
-//   document.querySelector('.carousel-indicator').innerHTML = hmmm;
-//  }
+
+//  Change carousel indicators
+ function number(num) {
+  document.querySelector('.carousel-indicator p span').innerHTML = num;
+ }
+
+//  Change Hero Card Content
+ function h4(h4) {
+  document.querySelector('.hero-content h4').innerHTML = h4;
+ }
+ function h1(h1) {
+  document.querySelector('.hero-content h1').innerHTML = h1;
+ }
+

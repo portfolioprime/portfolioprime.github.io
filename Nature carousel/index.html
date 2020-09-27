@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="font-awesome/css/all.min.css">
+  <title>Travel Nature with Carousel</title>
+  <script src="jquery.min.js"></script>
+
+  <!-- Glide Carousel CSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css"
+    integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+    crossorigin="anonymous" /> -->
+  <!-- Glide Core CSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css"
+    integrity="sha512-wYsVD8ho6rJOAo1Xf92gguhOGQ+aWgxuyKydjyEax4bnuEmHUt6VGwgpUqN8VlB4w50d0nt+ZL+3pgaFMAmdNQ=="
+    crossorigin="anonymous" />
+ -->
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <div class="hero">
+
+    <nav>
+      <div class="logo">
+        go<span>TRAVEL</span>
+      </div>
+      <ul class="nav">
+        <li>Home</li>
+        <li>Places</li>
+        <li>Visitors</li>
+        <li>Travel</li>
+        <li>Hotels</li>
+        <li>Bookings</li>
+      </ul>
+      <div class="toggler">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </div>
+    </nav>
+
+
+    <div class="intro">
+
+      <div class="hero-content">
+        <div class="line"></div>
+        <h4>Destination Norway</h4>
+        <h1>Saint<br> Antonien</h1>
+        <p>Welcome to the heart of Europe. Experience nature the way mother nature intended.</p>
+        <i class="fas fa-plane"></i>
+        <a href="" class="btn">Book your destination</a>
+      </div>
+
+      <div class="glide hero-carousel">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/02.jpg) bottom/cover no-repeat')">
+              <div class="carousel-text">
+                <p>Lorem ipsum</p>
+                <h3>Valley<br> of Dreams</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/03.jpg) bottom/cover no-repeat')">
+              <div class="carousel-text">
+                <p>Lorem ipsum</p>
+                <h3>Misty<br> Mountains</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/05.jpg) center/cover no-repeat')">
+              <div class="carousel-text">
+                <p>Lorem ipsum</p>
+                <h3>Beautiful<br> Slopes</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/04.jpg) bottom/cover no-repeat')">
+              <div class="carousel-text">
+                <p>Lorem ipsum</p>
+                <h3>Lockness<br> Lake</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/01.jpg) center/cover no-repeat')">
+              <div class="carousel-text">
+                <p>Lorem ipsum</p>
+                <h3>Forest<br> Trees</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/06.jpg) center/cover no-repeat')">
+              <div class="carousel-text">
+                <p>Lorem ipsum</p>
+                <h3>Canadian<br> Forest</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/08.jpg) center/cover no-repeat')">
+              <div class="carousel-text">
+                <p>Lorem ipsum</p>
+                <h3>Misty<br> Woodlands</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/4.jpg) center/cover no-repeat')">
+              <div class="carousel-text">
+                <p>Lorem ipsum</p>
+                <h3>A Slice<br> of Heaven</h3>
+              </div>      
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/01.jpg) top/cover no-repeat')">
+              <div class="carousel-text">
+                <p>Lorem ipsum</p>
+                <h3>Hidden<br> Fields</h3>
+              </div>      
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/07.jpg) center/cover no-repeat')">
+              <div class="carousel-text">
+                <p>Lorem ipsum</p>
+                <h3>Hiking<br> at the lake</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glide__arrows carousel-controls" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <i class="fas fa-chevron-left left"></i>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <i class="fas fa-chevron-right right"></i>
+          </button>
+        </div>
+
+        <!-- <div class="carousel-controls">
+          <i class="fas fa-chevron-left left"
+          onclick="plusSlides(-1)"></i>
+
+          <i class="fas fa-chevron-right right"
+          onclick="plusSlides(1)"></i>
+        </div> -->
+
+        <div class="carousel-indicator">
+          <p><span>01</span></p>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"
+    integrity="sha512-BXASbMmKLu+RC5TDnkupyhvrjiOQXILh/5zgIS8k5JAC71a73lNweVEg/X+9XJQ7GK22PH9WpztY3zqrji+xrQ=="
+    crossorigin="anonymous"></script>
+
+  <script>
+
+    new Glide('.glide', {
+      type: 'slider',
+      startAt: 0,
+      perView: 4,
+      gap: 20,
+      rewind: true,
+      breakpoints: {
+        1700: {
+          perView: 3
+        },
+        1300: {
+          perView: 2
+        },
+        991: {
+          perView: 3
+        },
+        730: {
+          perView: 2
+        },
+        500: {
+          perView: 1
+        }
+      }
+    }).mount()
+
+  </script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

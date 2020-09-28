@@ -61,6 +61,7 @@ function createLis(slider,sliderno) {
  
   slider.forEach(createLi);
 
+  // create li within ul
   function createLi(slide,slideno) {
     const li = document.createElement('LI');
     li.classList.add("carousel-item");
@@ -83,13 +84,52 @@ function createLis(slider,sliderno) {
 }
 
 function slideClicked(slide,slideno) {
-  heroChange("url("+slide[img]+") bottom/cover no-repeat");
   number('0'+slideno);//needs generalising for more than 10 slides!
   h4(slide[text1]);
   h1(slide[text2]);
+  heroChange('url("+slide[img]+") bottom/cover no-repeat');
 }
 
-/* // Change Hero Img
+
+// My Carousel Attempt
+// var & event-listener buttons
+document.querySelector(".left").addEventListener("click", slideLeft);
+document.querySelector(".right").addEventListener("click", slideRight);
+
+
+let marginLeft = 0;
+const slides = document.querySelector('.carousel-slides');
+
+// Function slide left
+function slideLeft() {
+  marginLeft -= 264;
+  slides.style.marginLeft = marginLeft + 'px';
+}
+// Function slide Right
+function slideRight() {
+  marginLeft += 264;
+  slides.style.marginLeft = marginLeft + 'px';
+}function number(num) {
+  document.querySelector('.carousel-indicator p span').innerHTML = num;
+}
+
+
+function showSlides() {
+  marginLeft -= 264;
+  var i;
+  var slides = document.getElementsByClassName("carousel-slides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.marginLeft = marginLeft + 'px';
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.marginLeft = marginLeft + 'px';
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+} 
+
+
+/* 
+// Change Hero Img
 function heroChange(hmmm) {
   var hero = document.querySelector('.hero');
   hero.style.background = hmmm;
@@ -107,4 +147,4 @@ function h4(h4) {
 function h1(h1) {
   document.querySelector('.hero-content h1').innerHTML = h1;
 }
- */
+*/

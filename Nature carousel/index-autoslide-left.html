@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="font-awesome/css/all.min.css">
+  <title>Travel Nature with Carousel</title>
+  <!-- jQuery for Glide.js Carousel -->
+  <!-- <script src="jquery.min.js"></script> -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="custom.css">
+
+
+</head>
+
+<body>
+
+  <div class="hero">
+
+    <nav>
+      <div class="logo">
+        go<span>TRAVEL</span>
+      </div>
+      <ul class="nav">
+        <li>Home</li>
+        <li>Places</li>
+        <li>Visitors</li>
+        <li>Travel</li>
+        <li>Hotels</li>
+        <li>Bookings</li>
+      </ul>
+      <div class="toggler">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </div>
+    </nav>
+
+
+    <div class="intro">
+
+      <div class="hero-content">
+        <div class="line"></div>
+        <h4>Destination Shire</h4>
+        <h1>Valley<br> of Dreams</h1>
+        <p>Welcome to the heart of Europe. Experience nature the way mother nature intended.</p>
+        <i class="fas fa-plane"></i>
+        <a href="" class="btn">Book your destination</a>
+      </div>
+
+      <div class="glide hero-carousel">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/02.jpg) bottom/cover no-repeat'); number('01'); h4('Destination Shire'); h1('Valley<br> of Dreams');">
+              <div class="carousel-text">
+                <p>Destination Shire</p>
+                <h3>Valley<br> of Dreams</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/03.jpg) bottom/cover no-repeat'); number('02'); h4('Destination Westwood'); h1('Misty<br> Woodlands');">
+              <div class="carousel-text">
+                <p>Destination Westwood</p>
+                <h3>Misty<br> Woodlands</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/05.jpg) center/cover no-repeat'); number('03'); h4('Destination France'); h1('Beautiful<br> Slopes');">
+              <div class="carousel-text">
+                <p>Destination France</p>
+                <h3>Beautiful<br> Slopes</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/04.jpg) bottom/cover no-repeat'); number('04'); h4('Destination Olympus'); h1('A Slice<br> of Heaven');">
+              <div class="carousel-text">
+                <p>Destination Olympus</p>
+                <h3>A Slice<br> of Heaven</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/01.jpg) center/cover no-repeat'); number('05'); h4('Destination UK'); h1('Cliffs<br> of Green');">
+              <div class="carousel-text">
+                <p>Destination UK</p>
+                <h3>Cliffs<br> of Green</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/06.jpg) center/cover no-repeat'); number('06'); h4('Destination Sea'); h1('Ocean\'s<br> Edge');">
+              <div class="carousel-text">
+                <p>Destination Nowhere</p>
+                <h3>Ocean's<br> Edge</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/08.jpg) center/cover no-repeat'); number('07'); h4('Destination Germany'); h1('Hidden<br> Paradise');">
+              <div class="carousel-text">
+                <p>Destination Germany</p>
+                <h3>Hidden<br> Paradise</h3>
+              </div>
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/4.jpg) center/cover no-repeat'); number('08'); h4('Destination Switzerland'); h1('Seabreeze<br> Lake');">
+              <div class="carousel-text">
+                <p>Destination Switzerland</p>
+                <h3>Seabreeze<br> Lake</h3>
+              </div>      
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/01.jpg) top/cover no-repeat'); number('09'); h4('Destination Spain'); h1('Green<br> Mountain');">
+              <div class="carousel-text">
+                <p>'Destination Spain</p>
+                <h3>Green<br> Mountain</h3>
+              </div>      
+            </li>
+            <li class="glide__slide carousel-item" onclick="heroChange('url(images/07.jpg) center/cover no-repeat'); number('10'); h4('Destination Lost'); h1('Paradise<br> Island');">
+              <div class="carousel-text">
+                <p>Destination Lost</p>
+                <h3>Paradise<br> Island</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="carousel-controls">
+          <i class="fas fa-chevron-left left"
+          ></i>
+
+          <i class="fas fa-chevron-right right"
+          ></i>
+        </div>
+
+        <div class="carousel-indicator">
+          <p><span>01</span></p>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="app-autoslide.js"></script>
+</body>
+
+</html>

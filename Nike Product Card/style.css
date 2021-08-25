@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #0382ee;
+  --primary-gradient: linear-gradient(-150deg, #0382ee, #0136af);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  padding: 10px;
+  background: #efefef;
+  min-height: 100vh;
+}
+
+.card {
+  width: 100%;
+}
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* background: linear-gradient(#0382ee, #042e45); */
+  /* background: linear-gradient(-150deg, #0382ee, #0136af); */
+  background: var(--primary-gradient);
+  padding: 0px 10px;
+  position: relative;
+  box-shadow: -30px 0 30px #ccc;
+}
+
+.card-top .logo {
+  width: 60px;
+  filter: brightness(200%);
+}
+.card-top a i {
+  color: var(--primary);
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px 7px;
+  z-index: 3;
+  position: relative;
+}
+.card-top .shoe {
+  flex: 100%;
+  /* width: 100%; */
+  width: auto;
+  z-index: 2;
+  max-height: 100%;
+  margin-top: -4rem;
+  margin-bottom: -1.5rem;
+  margin-right: 2rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.card-top .shoe img {
+  width: 100%;
+  height: auto;
+}
+.card-top .text {
+  width: 100%;
+}
+.card-top h1 {
+  font-size: 25vw;
+  text-transform: uppercase;
+  /* font-style: italic; */
+  font-weight: 700;
+  /* color: lightblue; */
+  color: #ffffff;
+  opacity: 0.12;
+  z-index: 1;
+  flex: 100%;
+  position: absolute;
+  top: 43%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.card-body {
+  padding: 20px;
+  background: #fff;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 0 50px #ccc;
+}
+.card-body > div {
+  margin: 15px 0;
+  z-index: 4;
+  position: relative;
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 15px;
+  transition: opacity 0.3s;
+  transition-delay: 0.3s;
+}
+.card-body > div:last-child {
+  border-bottom: none;
+}
+.shoe-title h3 {
+  font-weight: 700;
+  color: #333;
+  line-height: 2;
+}
+.shoe-title h3 span {
+  background: var(--primary);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: #fff;
+}
+.shoe-title p {
+  font-size: 16px;
+  color: #333;
+}
+hr {
+  color: transparent;
+  border-bottom: 1px solid #ddd;
+  display: none;
+}
+.shoe-info {
+  color: #555;
+  line-height: 1.5;
+}
+.shoe-info h4 {
+  text-transform: uppercase;
+}
+.shoe-color {
+  color: #555;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.shoe-color ul li {
+  width: 25px;
+  height: 25px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 3px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.shoe-color ul li.active {
+  border-color: #fff;
+  box-shadow: 0 0 5px #777;
+}
+/* .shoe-color ul a:hover {
+} */
+.shoe-color h4 {
+  margin-bottom: 5px;
+}
+.shoe-color ul li:nth-child(1) {
+  background: #0382ee;
+}
+.shoe-color ul li:nth-child(2) {
+  background: orange;
+}
+.shoe-color ul li:nth-child(3) {
+  background: #91ee34;
+}
+.shoe-color ul li:nth-child(4) {
+  background: #e23f24;
+}
+.shoe-color ul li:nth-child(5) {
+  background: #3c3e3b;
+}
+
+.shoe-size {
+  color: #555;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.shoe-size div {
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background: #efefef;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.shoe-size div.active {
+  color: #fff;
+  background: var(--primary);
+}
+.shoe-size h4 {
+  margin-bottom: 5px;
+}
+.buy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.buy a.btn {
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+}
+.buy a.btn i {
+  margin-right: 10px;
+}
+.buy .price {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: -1px;
+  color: #333;
+}
+.buy .price sup {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    padding: 4em 50px;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .card-top,
+  .card-body {
+    width: 50%;
+    transition: 0.5s ease;
+  }
+  .card-top {
+    /* overflow: hidden; */
+    min-height: 400px;
+    z-index: 1;
+  }
+  .card-top a i {
+    padding: 8px 9px;
+  }
+  .card-top h1 {
+    font-size: 175px;
+    top: 38%;
+    left: 50%;
+  }
+  .card-top .shoe {
+    transform: rotateZ(0deg);
+    margin-top: 0;
+    position: relative;
+    min-height: 400px;
+    left: -40%;
+    min-width: 130%;
+    /* width: 100%; */
+    padding-right: 0;
+    margin-bottom: -1rem;
+    transition: 0.6s;
+  }
+  .card-body {
+    z-index: 0;
+    width: 50%;
+    height: 540px;
+    overflow: hidden;
+    transition: width 0.5s;
+  }
+
+  /* Close / Open Card Animation CSS */
+  .close {
+    position: relative;
+    width: 600px;
+    height: 475px;
+  }
+  .close .shoe {
+    min-height: 510px;
+    left: -35%;
+    width: auto;
+    transform: rotateZ(-20deg);
+  }
+  .card-top.close h1 {
+    font-size: 230px;
+  }
+  .card-body.close {
+    width: 0;
+  }
+  .card-body.close::after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+  }
+  .card-body.close > div {
+    opacity: 0;
+    height: 0;
+  }
+}

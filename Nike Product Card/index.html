@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Responsive Mobile First Product Card</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font-awesome/css/all.min.css">
+</head>
+
+<body>
+
+  <main>
+
+    <div class="card">
+
+      <div class="card-top close" id="card-top">
+        <img class="logo" src="images/logo-grey1.png" alt="">
+        <a href="#"><i class="fas fa-share-alt"></i></a>
+        <img class="shoe" id="shoe" src="images/blue.png" alt="">
+        <div class="text">
+          <h1>nike</h1>
+        </div>
+      </div>
+
+      <div class="card-body close" id="card-body">
+        <div class="shoe-title">
+          <h3>Nike Zoom KD 12<span>NEW</span></h3>
+          <p>Men's Running Shoes</p>
+        </div>
+        <hr>
+        <div class="shoe-info">
+          <h4>Product Info</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti iusto aperiam nisi fugit quis quae
+            beatae animi maiores vel debitis!</p>
+        </div>
+        <hr>
+        <div class="shoe-color">
+          <h4>Color</h4>
+          <ul>
+            <li class="color active" primary="#0382ee" color="blue" gradient="linear-gradient(-150deg, #0382ee, #0136af)" onclick="document.querySelector('.shoe').src='images/blue.png'"></li>
+
+            <li class="color" primary="orange" color="orange" gradient="linear-gradient(45deg, #ef4300, orange)" onclick="document.querySelector('.shoe').src='images/orange.png'"></li>
+
+            <li class="color" primary="#91ee34" color="lime" gradient="linear-gradient(45deg,  #477d1d, #91ee34)" onclick="document.querySelector('.shoe').src='images/green.png'"></li>
+
+            <li class="color" primary="#e23f24" color="red" gradient="linear-gradient(45deg, #d42e12, #ee4e34)" onclick="document.querySelector('.shoe').src='images/red.png'"></li>
+
+            <li class="color" primary="#3c3e3b" color="black" gradient="linear-gradient(45deg, #3c3c3c, #5c5c5c)" onclick="document.querySelector('.shoe').src='images/black.png'"></li>
+          </ul>
+        </div>
+        <hr>
+        <div class="shoe-size">
+          <h4>Size</h4>
+          <div class="size active">7</div>
+          <div class="size">8</div>
+          <div class="size">9</div>
+          <div class="size">10</div>
+          <div class="size">11</div>
+        </div>
+        <hr>
+        <div class="buy">
+          <a href="" class="btn">
+            <i class="fas fa-shopping-cart"></i>
+            ADD TO CARD
+          </a>
+          <div class="price"><sup>$</sup>189.99</div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="my-js-app.js"></script>
+</body>
+
+</html>

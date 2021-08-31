@@ -300,6 +300,7 @@ footer {
   flex-wrap: wrap;
   padding: 60px 20px 20px;
   text-align: center;
+  background: #fff;
 }
 footer > * {
   width: 33%;

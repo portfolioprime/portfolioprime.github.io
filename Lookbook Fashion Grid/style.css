@@ -284,6 +284,9 @@ section.full::after {
 .grid.two .grid-item:nth-child(11) {
   background-image: url(images/zara11.jpg);
 }
+.grid.two .grid-item:nth-child(12) {
+  background-image: url(images/zara2.jpg.webp);
+}
 
 .grid.two .grid-item {
   padding: 60px 40px;
